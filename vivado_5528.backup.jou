@@ -1,0 +1,60 @@
+#-----------------------------------------------------------
+# Vivado v2015.2 (64-bit)
+# SW Build 1266856 on Fri Jun 26 16:35:25 MDT 2015
+# IP Build 1264090 on Wed Jun 24 14:22:01 MDT 2015
+# Start of session at: Mon Oct 31 12:42:45 2016
+# Process ID: 1048
+# Log file: D:/Project_CMOS_FDD_NEW/vivado.log
+# Journal file: D:/Project_CMOS_FDD_NEW\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project D:/Project_CMOS_FDD_NEW/Project_CMOS_FDD.xpr
+open_hw
+connect_hw_server
+open_hw_target [lindex [get_hw_targets -of_objects [get_hw_servers localhost]] 0]
+set_property PROGRAM.FILE {D:/Project_CMOS_FDD_NEW/Project_CMOS_FDD.runs/impl_1/PICO_ICS_FDD.bit} [lindex [get_hw_devices] 0]
+set_property PROBES.FILE {D:/Project_CMOS_FDD_NEW/Project_CMOS_FDD.runs/impl_1/debug_nets.ltx} [lindex [get_hw_devices] 0]
+current_hw_device [lindex [get_hw_devices] 0]
+refresh_hw_device [lindex [get_hw_devices] 0]
+set_property PROBES.FILE {D:/Project_CMOS_FDD_NEW/Project_CMOS_FDD.runs/impl_1/debug_nets.ltx} [lindex [get_hw_devices] 0]
+set_property PROGRAM.FILE {D:/Project_CMOS_FDD_NEW/Project_CMOS_FDD.runs/impl_1/PICO_ICS_FDD.bit} [lindex [get_hw_devices] 0]
+program_hw_devices [lindex [get_hw_devices] 0]
+refresh_hw_device [lindex [get_hw_devices] 0]
+display_hw_ila_data [ get_hw_ila_data hw_ila_data_1]
+run_hw_ila hw_ila_1
+wait_on_hw_ila hw_ila_1
+display_hw_ila_data [upload_hw_ila_data hw_ila_1]
+set_property PROBES.FILE {D:/Project_CMOS_FDD_NEW/Project_CMOS_FDD.runs/impl_1/debug_nets.ltx} [lindex [get_hw_devices] 0]
+set_property PROGRAM.FILE {D:/Project_CMOS_FDD_NEW/Project_CMOS_FDD.runs/impl_1/PICO_ICS_FDD.bit} [lindex [get_hw_devices] 0]
+program_hw_devices [lindex [get_hw_devices] 0]
+refresh_hw_device [lindex [get_hw_devices] 0]
+run_hw_ila hw_ila_1
+wait_on_hw_ila hw_ila_1
+display_hw_ila_data [upload_hw_ila_data hw_ila_1]
+run_hw_ila hw_ila_1
+wait_on_hw_ila hw_ila_1
+display_hw_ila_data [upload_hw_ila_data hw_ila_1]
+run_hw_ila hw_ila_1
+wait_on_hw_ila hw_ila_1
+display_hw_ila_data [upload_hw_ila_data hw_ila_1]
+run_hw_ila hw_ila_1
+wait_on_hw_ila hw_ila_1
+display_hw_ila_data [upload_hw_ila_data hw_ila_1]
+run_hw_ila hw_ila_1
+wait_on_hw_ila hw_ila_1
+display_hw_ila_data [upload_hw_ila_data hw_ila_1]
+run_hw_ila hw_ila_1
+wait_on_hw_ila hw_ila_1
+display_hw_ila_data [upload_hw_ila_data hw_ila_1]
+run_hw_ila hw_ila_1
+wait_on_hw_ila hw_ila_1
+display_hw_ila_data [upload_hw_ila_data hw_ila_1]
+run_hw_ila hw_ila_1
+wait_on_hw_ila hw_ila_1
+display_hw_ila_data [upload_hw_ila_data hw_ila_1]
+run_hw_ila hw_ila_1
+wait_on_hw_ila hw_ila_1
+display_hw_ila_data [upload_hw_ila_data hw_ila_1]
+open_run impl_1
+close_hw_target
+save_wave_config {D:/Project_CMOS_FDD_NEW/Project_CMOS_FDD.hw/hw_1/wave/hw_ila_data_1/hw_ila_data_1.wcfg}

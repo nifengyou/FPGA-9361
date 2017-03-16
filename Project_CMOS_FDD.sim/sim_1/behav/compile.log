@@ -1,0 +1,12 @@
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/Project_CMOS_FDD_NEW/Project_CMOS_FDD.srcs/sources_1/ip/DDR_FDD_OUT/DDR_FDD_OUT_selectio_wiz.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module DDR_FDD_OUT_selectio_wiz
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/Project_CMOS_FDD_NEW/Project_CMOS_FDD.srcs/sources_1/ip/DDR_FDD_OUT/DDR_FDD_OUT.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module DDR_FDD_OUT
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/Project_CMOS_FDD_NEW/Project_CMOS_FDD.srcs/sources_1/ip/DDR_FDD_IN/DDR_FDD_IN_selectio_wiz.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module DDR_FDD_IN_selectio_wiz
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/Project_CMOS_FDD_NEW/Project_CMOS_FDD.srcs/sources_1/ip/DDR_FDD_IN/DDR_FDD_IN.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module DDR_FDD_IN
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/Project_CMOS_FDD_NEW/Project_CMOS_FDD.srcs/sim_1/new/SIM_DDR_IN.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module SIM_DDR_IN
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/Project_CMOS_FDD_NEW/Project_CMOS_FDD.sim/sim_1/behav/glbl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module glbl

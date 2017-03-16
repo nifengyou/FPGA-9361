@@ -1,0 +1,174 @@
+#-----------------------------------------------------------
+# Vivado v2015.2 (64-bit)
+# SW Build 1266856 on Fri Jun 26 16:35:25 MDT 2015
+# IP Build 1264090 on Wed Jun 24 14:22:01 MDT 2015
+# Start of session at: Mon Oct 31 12:42:45 2016
+# Process ID: 1048
+# Log file: D:/Project_CMOS_FDD_NEW/vivado.log
+# Journal file: D:/Project_CMOS_FDD_NEW\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project D:/Project_CMOS_FDD_NEW/Project_CMOS_FDD.xpr
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2015.2/data/ip'.
+open_project: Time (s): cpu = 00:00:26 ; elapsed = 00:00:12 . Memory (MB): peak = 891.031 ; gain = 308.379
+open_hw
+connect_hw_server
+INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121
+INFO: [Labtools 27-2222] Launching hw_server...
+INFO: [Labtools 27-2221] Launch Output:
+
+****** Xilinx hw_server v2015.2
+  **** Build date : Jun 26 2015-16:56:39
+    ** Copyright 1986-1999, 2001-2015 Xilinx, Inc. All Rights Reserved.
+
+
+connect_hw_server: Time (s): cpu = 00:00:01 ; elapsed = 00:00:07 . Memory (MB): peak = 910.324 ; gain = 0.000
+open_hw_target [lindex [get_hw_targets -of_objects [get_hw_servers localhost]] 0]
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210276689299B
+set_property PROGRAM.FILE {D:/Project_CMOS_FDD_NEW/Project_CMOS_FDD.runs/impl_1/PICO_ICS_FDD.bit} [lindex [get_hw_devices] 0]
+set_property PROBES.FILE {D:/Project_CMOS_FDD_NEW/Project_CMOS_FDD.runs/impl_1/debug_nets.ltx} [lindex [get_hw_devices] 0]
+current_hw_device [lindex [get_hw_devices] 0]
+refresh_hw_device [lindex [get_hw_devices] 0]
+INFO: [Labtools 27-1435] Device xc7a200t (JTAG device index = 0) is not programmed (DONE status = 0).
+set_property PROBES.FILE {D:/Project_CMOS_FDD_NEW/Project_CMOS_FDD.runs/impl_1/debug_nets.ltx} [lindex [get_hw_devices] 0]
+set_property PROGRAM.FILE {D:/Project_CMOS_FDD_NEW/Project_CMOS_FDD.runs/impl_1/PICO_ICS_FDD.bit} [lindex [get_hw_devices] 0]
+program_hw_devices [lindex [get_hw_devices] 0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices] 0]
+INFO: [Labtools 27-2302] Device xc7a200t (JTAG device index = 0) is programmed with a design that has 1 ILA core(s).
+display_hw_ila_data [ get_hw_ila_data hw_ila_data_1]
+run_hw_ila hw_ila_1
+INFO: [Labtools 27-1964] The ILA core 'hw_ila_1' trigger was armed at 2016-Oct-31 12:43:46
+wait_on_hw_ila hw_ila_1
+display_hw_ila_data [upload_hw_ila_data hw_ila_1]
+INFO: [Labtools 27-1966] The ILA core 'hw_ila_1' triggered at 2016-Oct-31 12:43:46
+set_property PROBES.FILE {D:/Project_CMOS_FDD_NEW/Project_CMOS_FDD.runs/impl_1/debug_nets.ltx} [lindex [get_hw_devices] 0]
+set_property PROGRAM.FILE {D:/Project_CMOS_FDD_NEW/Project_CMOS_FDD.runs/impl_1/PICO_ICS_FDD.bit} [lindex [get_hw_devices] 0]
+program_hw_devices [lindex [get_hw_devices] 0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices] 0]
+INFO: [Labtools 27-2302] Device xc7a200t (JTAG device index = 0) is programmed with a design that has 1 ILA core(s).
+run_hw_ila hw_ila_1
+INFO: [Labtools 27-1964] The ILA core 'hw_ila_1' trigger was armed at 2016-Oct-31 12:45:24
+wait_on_hw_ila hw_ila_1
+display_hw_ila_data [upload_hw_ila_data hw_ila_1]
+INFO: [Labtools 27-1966] The ILA core 'hw_ila_1' triggered at 2016-Oct-31 12:45:24
+run_hw_ila hw_ila_1
+INFO: [Labtools 27-1964] The ILA core 'hw_ila_1' trigger was armed at 2016-Oct-31 12:45:31
+wait_on_hw_ila hw_ila_1
+display_hw_ila_data [upload_hw_ila_data hw_ila_1]
+INFO: [Labtools 27-1966] The ILA core 'hw_ila_1' triggered at 2016-Oct-31 12:45:31
+run_hw_ila hw_ila_1
+INFO: [Labtools 27-1964] The ILA core 'hw_ila_1' trigger was armed at 2016-Oct-31 12:45:40
+wait_on_hw_ila hw_ila_1
+display_hw_ila_data [upload_hw_ila_data hw_ila_1]
+INFO: [Labtools 27-1966] The ILA core 'hw_ila_1' triggered at 2016-Oct-31 12:45:40
+run_hw_ila hw_ila_1
+INFO: [Labtools 27-1964] The ILA core 'hw_ila_1' trigger was armed at 2016-Oct-31 12:45:52
+wait_on_hw_ila hw_ila_1
+display_hw_ila_data [upload_hw_ila_data hw_ila_1]
+INFO: [Labtools 27-1966] The ILA core 'hw_ila_1' triggered at 2016-Oct-31 12:45:52
+run_hw_ila hw_ila_1
+INFO: [Labtools 27-1964] The ILA core 'hw_ila_1' trigger was armed at 2016-Oct-31 12:49:23
+wait_on_hw_ila hw_ila_1
+display_hw_ila_data [upload_hw_ila_data hw_ila_1]
+INFO: [Labtools 27-1966] The ILA core 'hw_ila_1' triggered at 2016-Oct-31 12:49:23
+run_hw_ila hw_ila_1
+INFO: [Labtools 27-1964] The ILA core 'hw_ila_1' trigger was armed at 2016-Oct-31 12:54:44
+wait_on_hw_ila hw_ila_1
+display_hw_ila_data [upload_hw_ila_data hw_ila_1]
+INFO: [Labtools 27-1966] The ILA core 'hw_ila_1' triggered at 2016-Oct-31 12:54:44
+run_hw_ila hw_ila_1
+INFO: [Labtools 27-1964] The ILA core 'hw_ila_1' trigger was armed at 2016-Oct-31 12:55:11
+wait_on_hw_ila hw_ila_1
+display_hw_ila_data [upload_hw_ila_data hw_ila_1]
+INFO: [Labtools 27-1966] The ILA core 'hw_ila_1' triggered at 2016-Oct-31 12:55:11
+run_hw_ila hw_ila_1
+INFO: [Labtools 27-1964] The ILA core 'hw_ila_1' trigger was armed at 2016-Oct-31 12:55:36
+wait_on_hw_ila hw_ila_1
+display_hw_ila_data [upload_hw_ila_data hw_ila_1]
+INFO: [Labtools 27-1966] The ILA core 'hw_ila_1' triggered at 2016-Oct-31 12:55:36
+run_hw_ila hw_ila_1
+INFO: [Labtools 27-1964] The ILA core 'hw_ila_1' trigger was armed at 2016-Oct-31 12:55:41
+wait_on_hw_ila hw_ila_1
+display_hw_ila_data [upload_hw_ila_data hw_ila_1]
+INFO: [Labtools 27-1966] The ILA core 'hw_ila_1' triggered at 2016-Oct-31 12:55:41
+open_run impl_1
+INFO: [Netlist 29-17] Analyzing 985 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 1 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2015.2
+INFO: [Device 21-403] Loading part xc7a200tsbg484-1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+WARNING: [Constraints 18-550] Could not create 'IBUF_LOW_PWR' constraint because net 'U_AD80305_DATA_INTF_RX/U_DDR_FDD_IN/clk_in' is not directly connected to top level port. 'IBUF_LOW_PWR' is ignored by Vivado but preserved for implementation tool. [D:/Project_CMOS_FDD_NEW/Project_CMOS_FDD.runs/impl_1/.Xil/Vivado-2268-Mochen-PC/dcp_4/DDR_FDD_IN.edf:728]
+WARNING: [Constraints 18-550] Could not create 'IOSTANDARD' constraint because net 'U_AD80305_DATA_INTF_RX/U_DDR_FDD_IN/clk_in' is not directly connected to top level port. 'IOSTANDARD' is ignored by Vivado but preserved for implementation tool. [D:/Project_CMOS_FDD_NEW/Project_CMOS_FDD.runs/impl_1/.Xil/Vivado-2268-Mochen-PC/dcp_4/DDR_FDD_IN.edf:729]
+WARNING: [Constraints 18-550] Could not create 'IBUF_LOW_PWR' constraint because net 'U_AD80305_DATA_INTF_RX/U_DDR_FDD_IN/data_in_from_pins[0]' is not directly connected to top level port. 'IBUF_LOW_PWR' is ignored by Vivado but preserved for implementation tool. [D:/Project_CMOS_FDD_NEW/Project_CMOS_FDD.runs/impl_1/.Xil/Vivado-2268-Mochen-PC/dcp_4/DDR_FDD_IN.edf:747]
+WARNING: [Constraints 18-550] Could not create 'IOSTANDARD' constraint because net 'U_AD80305_DATA_INTF_RX/U_DDR_FDD_IN/data_in_from_pins[0]' is not directly connected to top level port. 'IOSTANDARD' is ignored by Vivado but preserved for implementation tool. [D:/Project_CMOS_FDD_NEW/Project_CMOS_FDD.runs/impl_1/.Xil/Vivado-2268-Mochen-PC/dcp_4/DDR_FDD_IN.edf:748]
+WARNING: [Constraints 18-550] Could not create 'IBUF_LOW_PWR' constraint because net 'U_AD80305_DATA_INTF_RX/U_DDR_FDD_IN/data_in_from_pins[10]' is not directly connected to top level port. 'IBUF_LOW_PWR' is ignored by Vivado but preserved for implementation tool. [D:/Project_CMOS_FDD_NEW/Project_CMOS_FDD.runs/impl_1/.Xil/Vivado-2268-Mochen-PC/dcp_4/DDR_FDD_IN.edf:827]
+WARNING: [Constraints 18-550] Could not create 'IOSTANDARD' constraint because net 'U_AD80305_DATA_INTF_RX/U_DDR_FDD_IN/data_in_from_pins[10]' is not directly connected to top level port. 'IOSTANDARD' is ignored by Vivado but preserved for implementation tool. [D:/Project_CMOS_FDD_NEW/Project_CMOS_FDD.runs/impl_1/.Xil/Vivado-2268-Mochen-PC/dcp_4/DDR_FDD_IN.edf:828]
+WARNING: [Constraints 18-550] Could not create 'IBUF_LOW_PWR' constraint because net 'U_AD80305_DATA_INTF_RX/U_DDR_FDD_IN/data_in_from_pins[11]' is not directly connected to top level port. 'IBUF_LOW_PWR' is ignored by Vivado but preserved for implementation tool. [D:/Project_CMOS_FDD_NEW/Project_CMOS_FDD.runs/impl_1/.Xil/Vivado-2268-Mochen-PC/dcp_4/DDR_FDD_IN.edf:835]
+WARNING: [Constraints 18-550] Could not create 'IOSTANDARD' constraint because net 'U_AD80305_DATA_INTF_RX/U_DDR_FDD_IN/data_in_from_pins[11]' is not directly connected to top level port. 'IOSTANDARD' is ignored by Vivado but preserved for implementation tool. [D:/Project_CMOS_FDD_NEW/Project_CMOS_FDD.runs/impl_1/.Xil/Vivado-2268-Mochen-PC/dcp_4/DDR_FDD_IN.edf:836]
+WARNING: [Constraints 18-550] Could not create 'IBUF_LOW_PWR' constraint because net 'U_AD80305_DATA_INTF_RX/U_DDR_FDD_IN/data_in_from_pins[12]' is not directly connected to top level port. 'IBUF_LOW_PWR' is ignored by Vivado but preserved for implementation tool. [D:/Project_CMOS_FDD_NEW/Project_CMOS_FDD.runs/impl_1/.Xil/Vivado-2268-Mochen-PC/dcp_4/DDR_FDD_IN.edf:843]
+WARNING: [Constraints 18-550] Could not create 'IOSTANDARD' constraint because net 'U_AD80305_DATA_INTF_RX/U_DDR_FDD_IN/data_in_from_pins[12]' is not directly connected to top level port. 'IOSTANDARD' is ignored by Vivado but preserved for implementation tool. [D:/Project_CMOS_FDD_NEW/Project_CMOS_FDD.runs/impl_1/.Xil/Vivado-2268-Mochen-PC/dcp_4/DDR_FDD_IN.edf:844]
+WARNING: [Constraints 18-550] Could not create 'IBUF_LOW_PWR' constraint because net 'U_AD80305_DATA_INTF_RX/U_DDR_FDD_IN/data_in_from_pins[1]' is not directly connected to top level port. 'IBUF_LOW_PWR' is ignored by Vivado but preserved for implementation tool. [D:/Project_CMOS_FDD_NEW/Project_CMOS_FDD.runs/impl_1/.Xil/Vivado-2268-Mochen-PC/dcp_4/DDR_FDD_IN.edf:755]
+WARNING: [Constraints 18-550] Could not create 'IOSTANDARD' constraint because net 'U_AD80305_DATA_INTF_RX/U_DDR_FDD_IN/data_in_from_pins[1]' is not directly connected to top level port. 'IOSTANDARD' is ignored by Vivado but preserved for implementation tool. [D:/Project_CMOS_FDD_NEW/Project_CMOS_FDD.runs/impl_1/.Xil/Vivado-2268-Mochen-PC/dcp_4/DDR_FDD_IN.edf:756]
+WARNING: [Constraints 18-550] Could not create 'IBUF_LOW_PWR' constraint because net 'U_AD80305_DATA_INTF_RX/U_DDR_FDD_IN/data_in_from_pins[2]' is not directly connected to top level port. 'IBUF_LOW_PWR' is ignored by Vivado but preserved for implementation tool. [D:/Project_CMOS_FDD_NEW/Project_CMOS_FDD.runs/impl_1/.Xil/Vivado-2268-Mochen-PC/dcp_4/DDR_FDD_IN.edf:763]
+WARNING: [Constraints 18-550] Could not create 'IOSTANDARD' constraint because net 'U_AD80305_DATA_INTF_RX/U_DDR_FDD_IN/data_in_from_pins[2]' is not directly connected to top level port. 'IOSTANDARD' is ignored by Vivado but preserved for implementation tool. [D:/Project_CMOS_FDD_NEW/Project_CMOS_FDD.runs/impl_1/.Xil/Vivado-2268-Mochen-PC/dcp_4/DDR_FDD_IN.edf:764]
+WARNING: [Constraints 18-550] Could not create 'IBUF_LOW_PWR' constraint because net 'U_AD80305_DATA_INTF_RX/U_DDR_FDD_IN/data_in_from_pins[3]' is not directly connected to top level port. 'IBUF_LOW_PWR' is ignored by Vivado but preserved for implementation tool. [D:/Project_CMOS_FDD_NEW/Project_CMOS_FDD.runs/impl_1/.Xil/Vivado-2268-Mochen-PC/dcp_4/DDR_FDD_IN.edf:771]
+WARNING: [Constraints 18-550] Could not create 'IOSTANDARD' constraint because net 'U_AD80305_DATA_INTF_RX/U_DDR_FDD_IN/data_in_from_pins[3]' is not directly connected to top level port. 'IOSTANDARD' is ignored by Vivado but preserved for implementation tool. [D:/Project_CMOS_FDD_NEW/Project_CMOS_FDD.runs/impl_1/.Xil/Vivado-2268-Mochen-PC/dcp_4/DDR_FDD_IN.edf:772]
+WARNING: [Constraints 18-550] Could not create 'IBUF_LOW_PWR' constraint because net 'U_AD80305_DATA_INTF_RX/U_DDR_FDD_IN/data_in_from_pins[4]' is not directly connected to top level port. 'IBUF_LOW_PWR' is ignored by Vivado but preserved for implementation tool. [D:/Project_CMOS_FDD_NEW/Project_CMOS_FDD.runs/impl_1/.Xil/Vivado-2268-Mochen-PC/dcp_4/DDR_FDD_IN.edf:779]
+WARNING: [Constraints 18-550] Could not create 'IOSTANDARD' constraint because net 'U_AD80305_DATA_INTF_RX/U_DDR_FDD_IN/data_in_from_pins[4]' is not directly connected to top level port. 'IOSTANDARD' is ignored by Vivado but preserved for implementation tool. [D:/Project_CMOS_FDD_NEW/Project_CMOS_FDD.runs/impl_1/.Xil/Vivado-2268-Mochen-PC/dcp_4/DDR_FDD_IN.edf:780]
+WARNING: [Constraints 18-550] Could not create 'IBUF_LOW_PWR' constraint because net 'U_AD80305_DATA_INTF_RX/U_DDR_FDD_IN/data_in_from_pins[5]' is not directly connected to top level port. 'IBUF_LOW_PWR' is ignored by Vivado but preserved for implementation tool. [D:/Project_CMOS_FDD_NEW/Project_CMOS_FDD.runs/impl_1/.Xil/Vivado-2268-Mochen-PC/dcp_4/DDR_FDD_IN.edf:787]
+WARNING: [Constraints 18-550] Could not create 'IOSTANDARD' constraint because net 'U_AD80305_DATA_INTF_RX/U_DDR_FDD_IN/data_in_from_pins[5]' is not directly connected to top level port. 'IOSTANDARD' is ignored by Vivado but preserved for implementation tool. [D:/Project_CMOS_FDD_NEW/Project_CMOS_FDD.runs/impl_1/.Xil/Vivado-2268-Mochen-PC/dcp_4/DDR_FDD_IN.edf:788]
+WARNING: [Constraints 18-550] Could not create 'IBUF_LOW_PWR' constraint because net 'U_AD80305_DATA_INTF_RX/U_DDR_FDD_IN/data_in_from_pins[6]' is not directly connected to top level port. 'IBUF_LOW_PWR' is ignored by Vivado but preserved for implementation tool. [D:/Project_CMOS_FDD_NEW/Project_CMOS_FDD.runs/impl_1/.Xil/Vivado-2268-Mochen-PC/dcp_4/DDR_FDD_IN.edf:795]
+WARNING: [Constraints 18-550] Could not create 'IOSTANDARD' constraint because net 'U_AD80305_DATA_INTF_RX/U_DDR_FDD_IN/data_in_from_pins[6]' is not directly connected to top level port. 'IOSTANDARD' is ignored by Vivado but preserved for implementation tool. [D:/Project_CMOS_FDD_NEW/Project_CMOS_FDD.runs/impl_1/.Xil/Vivado-2268-Mochen-PC/dcp_4/DDR_FDD_IN.edf:796]
+WARNING: [Constraints 18-550] Could not create 'IBUF_LOW_PWR' constraint because net 'U_AD80305_DATA_INTF_RX/U_DDR_FDD_IN/data_in_from_pins[7]' is not directly connected to top level port. 'IBUF_LOW_PWR' is ignored by Vivado but preserved for implementation tool. [D:/Project_CMOS_FDD_NEW/Project_CMOS_FDD.runs/impl_1/.Xil/Vivado-2268-Mochen-PC/dcp_4/DDR_FDD_IN.edf:803]
+WARNING: [Constraints 18-550] Could not create 'IOSTANDARD' constraint because net 'U_AD80305_DATA_INTF_RX/U_DDR_FDD_IN/data_in_from_pins[7]' is not directly connected to top level port. 'IOSTANDARD' is ignored by Vivado but preserved for implementation tool. [D:/Project_CMOS_FDD_NEW/Project_CMOS_FDD.runs/impl_1/.Xil/Vivado-2268-Mochen-PC/dcp_4/DDR_FDD_IN.edf:804]
+WARNING: [Constraints 18-550] Could not create 'IBUF_LOW_PWR' constraint because net 'U_AD80305_DATA_INTF_RX/U_DDR_FDD_IN/data_in_from_pins[8]' is not directly connected to top level port. 'IBUF_LOW_PWR' is ignored by Vivado but preserved for implementation tool. [D:/Project_CMOS_FDD_NEW/Project_CMOS_FDD.runs/impl_1/.Xil/Vivado-2268-Mochen-PC/dcp_4/DDR_FDD_IN.edf:811]
+WARNING: [Constraints 18-550] Could not create 'IOSTANDARD' constraint because net 'U_AD80305_DATA_INTF_RX/U_DDR_FDD_IN/data_in_from_pins[8]' is not directly connected to top level port. 'IOSTANDARD' is ignored by Vivado but preserved for implementation tool. [D:/Project_CMOS_FDD_NEW/Project_CMOS_FDD.runs/impl_1/.Xil/Vivado-2268-Mochen-PC/dcp_4/DDR_FDD_IN.edf:812]
+WARNING: [Constraints 18-550] Could not create 'IBUF_LOW_PWR' constraint because net 'U_AD80305_DATA_INTF_RX/U_DDR_FDD_IN/data_in_from_pins[9]' is not directly connected to top level port. 'IBUF_LOW_PWR' is ignored by Vivado but preserved for implementation tool. [D:/Project_CMOS_FDD_NEW/Project_CMOS_FDD.runs/impl_1/.Xil/Vivado-2268-Mochen-PC/dcp_4/DDR_FDD_IN.edf:819]
+WARNING: [Constraints 18-550] Could not create 'IOSTANDARD' constraint because net 'U_AD80305_DATA_INTF_RX/U_DDR_FDD_IN/data_in_from_pins[9]' is not directly connected to top level port. 'IOSTANDARD' is ignored by Vivado but preserved for implementation tool. [D:/Project_CMOS_FDD_NEW/Project_CMOS_FDD.runs/impl_1/.Xil/Vivado-2268-Mochen-PC/dcp_4/DDR_FDD_IN.edf:820]
+WARNING: [Constraints 18-550] Could not create 'IBUF_LOW_PWR' constraint because net 'U_AD80305_DATA_INTF_TX/U_DDR_FDD_OUT/clk_in' is not directly connected to top level port. 'IBUF_LOW_PWR' is ignored by Vivado but preserved for implementation tool. [D:/Project_CMOS_FDD_NEW/Project_CMOS_FDD.runs/impl_1/.Xil/Vivado-2268-Mochen-PC/dcp_5/DDR_FDD_OUT.edf:685]
+WARNING: [Constraints 18-550] Could not create 'IOSTANDARD' constraint because net 'U_AD80305_DATA_INTF_TX/U_DDR_FDD_OUT/clk_in' is not directly connected to top level port. 'IOSTANDARD' is ignored by Vivado but preserved for implementation tool. [D:/Project_CMOS_FDD_NEW/Project_CMOS_FDD.runs/impl_1/.Xil/Vivado-2268-Mochen-PC/dcp_5/DDR_FDD_OUT.edf:686]
+WARNING: [Constraints 18-550] Could not create 'IBUF_LOW_PWR' constraint because net 'U_PLL/clk_in1' is not directly connected to top level port. 'IBUF_LOW_PWR' is ignored by Vivado but preserved for implementation tool. [D:/Project_CMOS_FDD_NEW/Project_CMOS_FDD.runs/impl_1/.Xil/Vivado-2268-Mochen-PC/dcp_2/clk_wiz_0.edf:357]
+Parsing XDC File [D:/Project_CMOS_FDD_NEW/.Xil/Vivado-1048-Mochen-PC/dcp/PICO_ICS_FDD_early.xdc]
+INFO: [Timing 38-35] Done setting XDC timing constraints. [D:/Project_CMOS_FDD_NEW/Project_CMOS_FDD.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0.xdc:56]
+INFO: [Timing 38-2] Deriving generated clocks [D:/Project_CMOS_FDD_NEW/Project_CMOS_FDD.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0.xdc:56]
+get_clocks: Time (s): cpu = 00:00:16 ; elapsed = 00:00:16 . Memory (MB): peak = 1847.484 ; gain = 525.617
+Finished Parsing XDC File [D:/Project_CMOS_FDD_NEW/.Xil/Vivado-1048-Mochen-PC/dcp/PICO_ICS_FDD_early.xdc]
+Parsing XDC File [D:/Project_CMOS_FDD_NEW/.Xil/Vivado-1048-Mochen-PC/dcp/PICO_ICS_FDD.xdc]
+Finished Parsing XDC File [D:/Project_CMOS_FDD_NEW/.Xil/Vivado-1048-Mochen-PC/dcp/PICO_ICS_FDD.xdc]
+Reading XDEF placement.
+Reading placer database...
+Reading XDEF routing.
+Read XDEF File: Time (s): cpu = 00:00:02 ; elapsed = 00:00:01 . Memory (MB): peak = 1877.133 ; gain = 1.707
+Restored from archive | CPU: 2.000000 secs | Memory: 0.000000 MB |
+Finished XDEF File Restore: Time (s): cpu = 00:00:02 ; elapsed = 00:00:01 . Memory (MB): peak = 1877.133 ; gain = 1.707
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 430 instances were transformed.
+  CFGLUT5 => CFGLUT5 (SRLC32E, SRL16E): 392 instances
+  RAM32M => RAM32M (RAMD32, RAMD32, RAMD32, RAMD32, RAMD32, RAMD32, RAMS32, RAMS32): 6 instances
+  RAM64M => RAM64M (RAMD64E, RAMD64E, RAMD64E, RAMD64E): 32 instances
+
+open_run: Time (s): cpu = 00:00:51 ; elapsed = 00:00:43 . Memory (MB): peak = 2126.266 ; gain = 1095.344
+ERROR: [Xicom 50-38] xicom: Core access failed. Check cable connectivity and that the target board is powered up then use the disconnect_hw_server and connect_hw_server to re-initialize the hardware target. Use open_hw_target to re-register the hardware device.
+ERROR: [Xicom 50-38] xicom: Core access failed. Check cable connectivity and that the target board is powered up then use the disconnect_hw_server and connect_hw_server to re-initialize the hardware target. Use open_hw_target to re-register the hardware device.
+ERROR: [Labtools 27-3175] Target jsn-Nexys Video-210276689299B is no longer available.
+Please use disconnect_hw_server to close the current server connection. Check cable connectivity and that the target board is powered up.
+Restart the hw_server application running on host localhost, port 3121 and then use connect_hw_server to re-establish connection to target.
+close_hw_target
+ERROR: [Xicom 50-38] xicom: Core access failed. Check cable connectivity and that the target board is powered up then use the disconnect_hw_server and connect_hw_server to re-initialize the hardware target. Use open_hw_target to re-register the hardware device.
+ERROR: [Xicom 50-38] xicom: Core access failed. Check cable connectivity and that the target board is powered up then use the disconnect_hw_server and connect_hw_server to re-initialize the hardware target. Use open_hw_target to re-register the hardware device.
+INFO: [Labtoolstcl 44-464] Closing hw_target localhost/xilinx_tcf/Digilent/210276689299B
+ERROR: [Common 17-190] Invalid Tcl eval of 'save_wave_config {D:/Project_CMOS_FDD_NEW/Project_CMOS_FDD.hw/hw_1/wave/hw_ila_data_1/hw_ila_data_1.wcfg}' during processing of event '153'.
+ERROR: [Common 17-39] 'close_hw_target' failed due to earlier errors.
+
+    while executing
+"close_hw_target"
+    ("after" script)
+save_wave_config {D:/Project_CMOS_FDD_NEW/Project_CMOS_FDD.hw/hw_1/wave/hw_ila_data_1/hw_ila_data_1.wcfg}
+exit
+INFO: [Common 17-206] Exiting Vivado at Mon Oct 31 13:59:59 2016...

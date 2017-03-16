@@ -1,0 +1,274 @@
+#-----------------------------------------------------------
+# Vivado v2015.2 (64-bit)
+# SW Build 1266856 on Fri Jun 26 16:35:25 MDT 2015
+# IP Build 1264090 on Wed Jun 24 14:22:01 MDT 2015
+# Start of session at: Fri Nov 18 10:32:59 2016
+# Process ID: 5528
+# Log file: D:/Suncai/Project_CMOS_FDD_NEW/vivado.log
+# Journal file: D:/Suncai/Project_CMOS_FDD_NEW\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project D:/Suncai/Project_CMOS_FDD_NEW/Project_CMOS_FDD.xpr
+INFO: [Project 1-313] Project file moved from 'E:/Project_CMOS_FDD_NEW' since last save.
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'D:/Xilinx/Vivado/2015.2/data/ip'.
+open_project: Time (s): cpu = 00:00:17 ; elapsed = 00:00:08 . Memory (MB): peak = 951.586 ; gain = 269.621
+open_hw
+connect_hw_server
+INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121
+INFO: [Labtools 27-2222] Launching hw_server...
+INFO: [Labtools 27-2221] Launch Output:
+
+****** Xilinx hw_server v2015.2
+  **** Build date : Jun 26 2015-16:56:39
+    ** Copyright 1986-1999, 2001-2015 Xilinx, Inc. All Rights Reserved.
+
+
+open_hw_target [lindex [get_hw_targets -of_objects [get_hw_servers localhost]] 0]
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210276689290B
+set_property PROGRAM.FILE {D:/Suncai/Project_CMOS_FDD_NEW/Project_CMOS_FDD.runs/impl_1/PICO_ICS_FDD.bit} [lindex [get_hw_devices] 0]
+set_property PROBES.FILE {D:/Suncai/Project_CMOS_FDD_NEW/Project_CMOS_FDD.runs/impl_1/debug_nets.ltx} [lindex [get_hw_devices] 0]
+current_hw_device [lindex [get_hw_devices] 0]
+refresh_hw_device [lindex [get_hw_devices] 0]
+INFO: [Labtools 27-1435] Device xc7a200t (JTAG device index = 0) is not programmed (DONE status = 0).
+set_property PROBES.FILE {D:/Suncai/Project_CMOS_FDD_NEW/Project_CMOS_FDD.runs/impl_1/debug_nets.ltx} [lindex [get_hw_devices] 0]
+set_property PROGRAM.FILE {D:/Suncai/Project_CMOS_FDD_NEW/Project_CMOS_FDD.runs/impl_1/PICO_ICS_FDD.bit} [lindex [get_hw_devices] 0]
+program_hw_devices [lindex [get_hw_devices] 0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices] 0]
+INFO: [Labtools 27-2302] Device xc7a200t (JTAG device index = 0) is programmed with a design that has 1 ILA core(s).
+INFO: [Labtools 27-2302] Device xc7a200t (JTAG device index = 0) is programmed with a design that has 1 VIO core(s).
+INFO: [Labtools 27-1889] Uploading output probe values for VIO core [hw_vio_1]
+display_hw_ila_data [ get_hw_ila_data hw_ila_data_1]
+set_property OUTPUT_VALUE 1 [get_hw_probes MODSET -of_objects [get_hw_vios hw_vio_1]]
+commit_hw_vio [get_hw_probes {MODSET} -of_objects [get_hw_vios hw_vio_1]]
+set_property OUTPUT_VALUE 2 [get_hw_probes MODSET -of_objects [get_hw_vios hw_vio_1]]
+commit_hw_vio [get_hw_probes {MODSET} -of_objects [get_hw_vios hw_vio_1]]
+set_property OUTPUT_VALUE 3 [get_hw_probes MODSET -of_objects [get_hw_vios hw_vio_1]]
+commit_hw_vio [get_hw_probes {MODSET} -of_objects [get_hw_vios hw_vio_1]]
+run_hw_ila hw_ila_1
+INFO: [Labtools 27-1964] The ILA core 'hw_ila_1' trigger was armed at 2016-Nov-18 10:35:16
+wait_on_hw_ila hw_ila_1
+display_hw_ila_data [upload_hw_ila_data hw_ila_1]
+INFO: [Labtools 27-1966] The ILA core 'hw_ila_1' triggered at 2016-Nov-18 10:35:16
+save_wave_config {D:/Suncai/Project_CMOS_FDD_NEW/Project_CMOS_FDD.hw/hw_1/wave/hw_ila_data_1/hw_ila_data_1.wcfg}
+close_hw
+****** Webtalk v2015.2 (64-bit)
+  **** SW Build 1266856 on Fri Jun 26 16:35:25 MDT 2015
+  **** IP Build 1264090 on Wed Jun 24 14:22:01 MDT 2015
+    ** Copyright 1986-2015 Xilinx, Inc. All Rights Reserved.
+
+source D:/Suncai/Project_CMOS_FDD_NEW/Project_CMOS_FDD.hw/webtalk/labtool_webtalk.tcl -notrace
+
+    while executing
+"webtalk_transmit -clientid 2907483486 -regid "" -xml D:/Suncai/Project_CMOS_FDD_NEW/Project_CMOS_FDD.hw/webtalk/usage_statistics_ext_labtool.xml -html..."
+    (file "D:/Suncai/Project_CMOS_FDD_NEW/Project_CMOS_FDD.hw/webtalk/labtool_webtalk.tcl" line 28)
+INFO: [Common 17-206] Exiting Webtalk at Fri Nov 18 10:36:03 2016...
+update_compile_order -fileset sources_1
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+[Fri Nov 18 10:54:48 2016] Launched synth_1...
+Run output will be captured here: D:/Suncai/Project_CMOS_FDD_NEW/Project_CMOS_FDD.runs/synth_1/runme.log
+[Fri Nov 18 10:54:48 2016] Launched impl_1...
+Run output will be captured here: D:/Suncai/Project_CMOS_FDD_NEW/Project_CMOS_FDD.runs/impl_1/runme.log
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+[Fri Nov 18 10:55:55 2016] Launched synth_1...
+Run output will be captured here: D:/Suncai/Project_CMOS_FDD_NEW/Project_CMOS_FDD.runs/synth_1/runme.log
+[Fri Nov 18 10:55:55 2016] Launched impl_1...
+Run output will be captured here: D:/Suncai/Project_CMOS_FDD_NEW/Project_CMOS_FDD.runs/impl_1/runme.log
+open_run impl_1
+INFO: [Netlist 29-17] Analyzing 985 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2015.2
+INFO: [Device 21-403] Loading part xc7a200tsbg484-1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+WARNING: [Constraints 18-550] Could not create 'IBUF_LOW_PWR' constraint because net 'U_AD80305_DATA_INTF_RX/U_DDR_FDD_IN/clk_in' is not directly connected to top level port. 'IBUF_LOW_PWR' is ignored by Vivado but preserved for implementation tool. [D:/Suncai/Project_CMOS_FDD_NEW/Project_CMOS_FDD.runs/impl_1/.Xil/Vivado-4512-DESKTOP-4TNH1AT/dcp_4/DDR_FDD_IN.edf:728]
+WARNING: [Constraints 18-550] Could not create 'IOSTANDARD' constraint because net 'U_AD80305_DATA_INTF_RX/U_DDR_FDD_IN/clk_in' is not directly connected to top level port. 'IOSTANDARD' is ignored by Vivado but preserved for implementation tool. [D:/Suncai/Project_CMOS_FDD_NEW/Project_CMOS_FDD.runs/impl_1/.Xil/Vivado-4512-DESKTOP-4TNH1AT/dcp_4/DDR_FDD_IN.edf:729]
+WARNING: [Constraints 18-550] Could not create 'IBUF_LOW_PWR' constraint because net 'U_AD80305_DATA_INTF_RX/U_DDR_FDD_IN/data_in_from_pins[0]' is not directly connected to top level port. 'IBUF_LOW_PWR' is ignored by Vivado but preserved for implementation tool. [D:/Suncai/Project_CMOS_FDD_NEW/Project_CMOS_FDD.runs/impl_1/.Xil/Vivado-4512-DESKTOP-4TNH1AT/dcp_4/DDR_FDD_IN.edf:747]
+WARNING: [Constraints 18-550] Could not create 'IOSTANDARD' constraint because net 'U_AD80305_DATA_INTF_RX/U_DDR_FDD_IN/data_in_from_pins[0]' is not directly connected to top level port. 'IOSTANDARD' is ignored by Vivado but preserved for implementation tool. [D:/Suncai/Project_CMOS_FDD_NEW/Project_CMOS_FDD.runs/impl_1/.Xil/Vivado-4512-DESKTOP-4TNH1AT/dcp_4/DDR_FDD_IN.edf:748]
+WARNING: [Constraints 18-550] Could not create 'IBUF_LOW_PWR' constraint because net 'U_AD80305_DATA_INTF_RX/U_DDR_FDD_IN/data_in_from_pins[10]' is not directly connected to top level port. 'IBUF_LOW_PWR' is ignored by Vivado but preserved for implementation tool. [D:/Suncai/Project_CMOS_FDD_NEW/Project_CMOS_FDD.runs/impl_1/.Xil/Vivado-4512-DESKTOP-4TNH1AT/dcp_4/DDR_FDD_IN.edf:827]
+WARNING: [Constraints 18-550] Could not create 'IOSTANDARD' constraint because net 'U_AD80305_DATA_INTF_RX/U_DDR_FDD_IN/data_in_from_pins[10]' is not directly connected to top level port. 'IOSTANDARD' is ignored by Vivado but preserved for implementation tool. [D:/Suncai/Project_CMOS_FDD_NEW/Project_CMOS_FDD.runs/impl_1/.Xil/Vivado-4512-DESKTOP-4TNH1AT/dcp_4/DDR_FDD_IN.edf:828]
+WARNING: [Constraints 18-550] Could not create 'IBUF_LOW_PWR' constraint because net 'U_AD80305_DATA_INTF_RX/U_DDR_FDD_IN/data_in_from_pins[11]' is not directly connected to top level port. 'IBUF_LOW_PWR' is ignored by Vivado but preserved for implementation tool. [D:/Suncai/Project_CMOS_FDD_NEW/Project_CMOS_FDD.runs/impl_1/.Xil/Vivado-4512-DESKTOP-4TNH1AT/dcp_4/DDR_FDD_IN.edf:835]
+WARNING: [Constraints 18-550] Could not create 'IOSTANDARD' constraint because net 'U_AD80305_DATA_INTF_RX/U_DDR_FDD_IN/data_in_from_pins[11]' is not directly connected to top level port. 'IOSTANDARD' is ignored by Vivado but preserved for implementation tool. [D:/Suncai/Project_CMOS_FDD_NEW/Project_CMOS_FDD.runs/impl_1/.Xil/Vivado-4512-DESKTOP-4TNH1AT/dcp_4/DDR_FDD_IN.edf:836]
+WARNING: [Constraints 18-550] Could not create 'IBUF_LOW_PWR' constraint because net 'U_AD80305_DATA_INTF_RX/U_DDR_FDD_IN/data_in_from_pins[12]' is not directly connected to top level port. 'IBUF_LOW_PWR' is ignored by Vivado but preserved for implementation tool. [D:/Suncai/Project_CMOS_FDD_NEW/Project_CMOS_FDD.runs/impl_1/.Xil/Vivado-4512-DESKTOP-4TNH1AT/dcp_4/DDR_FDD_IN.edf:843]
+WARNING: [Constraints 18-550] Could not create 'IOSTANDARD' constraint because net 'U_AD80305_DATA_INTF_RX/U_DDR_FDD_IN/data_in_from_pins[12]' is not directly connected to top level port. 'IOSTANDARD' is ignored by Vivado but preserved for implementation tool. [D:/Suncai/Project_CMOS_FDD_NEW/Project_CMOS_FDD.runs/impl_1/.Xil/Vivado-4512-DESKTOP-4TNH1AT/dcp_4/DDR_FDD_IN.edf:844]
+WARNING: [Constraints 18-550] Could not create 'IBUF_LOW_PWR' constraint because net 'U_AD80305_DATA_INTF_RX/U_DDR_FDD_IN/data_in_from_pins[1]' is not directly connected to top level port. 'IBUF_LOW_PWR' is ignored by Vivado but preserved for implementation tool. [D:/Suncai/Project_CMOS_FDD_NEW/Project_CMOS_FDD.runs/impl_1/.Xil/Vivado-4512-DESKTOP-4TNH1AT/dcp_4/DDR_FDD_IN.edf:755]
+WARNING: [Constraints 18-550] Could not create 'IOSTANDARD' constraint because net 'U_AD80305_DATA_INTF_RX/U_DDR_FDD_IN/data_in_from_pins[1]' is not directly connected to top level port. 'IOSTANDARD' is ignored by Vivado but preserved for implementation tool. [D:/Suncai/Project_CMOS_FDD_NEW/Project_CMOS_FDD.runs/impl_1/.Xil/Vivado-4512-DESKTOP-4TNH1AT/dcp_4/DDR_FDD_IN.edf:756]
+WARNING: [Constraints 18-550] Could not create 'IBUF_LOW_PWR' constraint because net 'U_AD80305_DATA_INTF_RX/U_DDR_FDD_IN/data_in_from_pins[2]' is not directly connected to top level port. 'IBUF_LOW_PWR' is ignored by Vivado but preserved for implementation tool. [D:/Suncai/Project_CMOS_FDD_NEW/Project_CMOS_FDD.runs/impl_1/.Xil/Vivado-4512-DESKTOP-4TNH1AT/dcp_4/DDR_FDD_IN.edf:763]
+WARNING: [Constraints 18-550] Could not create 'IOSTANDARD' constraint because net 'U_AD80305_DATA_INTF_RX/U_DDR_FDD_IN/data_in_from_pins[2]' is not directly connected to top level port. 'IOSTANDARD' is ignored by Vivado but preserved for implementation tool. [D:/Suncai/Project_CMOS_FDD_NEW/Project_CMOS_FDD.runs/impl_1/.Xil/Vivado-4512-DESKTOP-4TNH1AT/dcp_4/DDR_FDD_IN.edf:764]
+WARNING: [Constraints 18-550] Could not create 'IBUF_LOW_PWR' constraint because net 'U_AD80305_DATA_INTF_RX/U_DDR_FDD_IN/data_in_from_pins[3]' is not directly connected to top level port. 'IBUF_LOW_PWR' is ignored by Vivado but preserved for implementation tool. [D:/Suncai/Project_CMOS_FDD_NEW/Project_CMOS_FDD.runs/impl_1/.Xil/Vivado-4512-DESKTOP-4TNH1AT/dcp_4/DDR_FDD_IN.edf:771]
+WARNING: [Constraints 18-550] Could not create 'IOSTANDARD' constraint because net 'U_AD80305_DATA_INTF_RX/U_DDR_FDD_IN/data_in_from_pins[3]' is not directly connected to top level port. 'IOSTANDARD' is ignored by Vivado but preserved for implementation tool. [D:/Suncai/Project_CMOS_FDD_NEW/Project_CMOS_FDD.runs/impl_1/.Xil/Vivado-4512-DESKTOP-4TNH1AT/dcp_4/DDR_FDD_IN.edf:772]
+WARNING: [Constraints 18-550] Could not create 'IBUF_LOW_PWR' constraint because net 'U_AD80305_DATA_INTF_RX/U_DDR_FDD_IN/data_in_from_pins[4]' is not directly connected to top level port. 'IBUF_LOW_PWR' is ignored by Vivado but preserved for implementation tool. [D:/Suncai/Project_CMOS_FDD_NEW/Project_CMOS_FDD.runs/impl_1/.Xil/Vivado-4512-DESKTOP-4TNH1AT/dcp_4/DDR_FDD_IN.edf:779]
+WARNING: [Constraints 18-550] Could not create 'IOSTANDARD' constraint because net 'U_AD80305_DATA_INTF_RX/U_DDR_FDD_IN/data_in_from_pins[4]' is not directly connected to top level port. 'IOSTANDARD' is ignored by Vivado but preserved for implementation tool. [D:/Suncai/Project_CMOS_FDD_NEW/Project_CMOS_FDD.runs/impl_1/.Xil/Vivado-4512-DESKTOP-4TNH1AT/dcp_4/DDR_FDD_IN.edf:780]
+WARNING: [Constraints 18-550] Could not create 'IBUF_LOW_PWR' constraint because net 'U_AD80305_DATA_INTF_RX/U_DDR_FDD_IN/data_in_from_pins[5]' is not directly connected to top level port. 'IBUF_LOW_PWR' is ignored by Vivado but preserved for implementation tool. [D:/Suncai/Project_CMOS_FDD_NEW/Project_CMOS_FDD.runs/impl_1/.Xil/Vivado-4512-DESKTOP-4TNH1AT/dcp_4/DDR_FDD_IN.edf:787]
+WARNING: [Constraints 18-550] Could not create 'IOSTANDARD' constraint because net 'U_AD80305_DATA_INTF_RX/U_DDR_FDD_IN/data_in_from_pins[5]' is not directly connected to top level port. 'IOSTANDARD' is ignored by Vivado but preserved for implementation tool. [D:/Suncai/Project_CMOS_FDD_NEW/Project_CMOS_FDD.runs/impl_1/.Xil/Vivado-4512-DESKTOP-4TNH1AT/dcp_4/DDR_FDD_IN.edf:788]
+WARNING: [Constraints 18-550] Could not create 'IBUF_LOW_PWR' constraint because net 'U_AD80305_DATA_INTF_RX/U_DDR_FDD_IN/data_in_from_pins[6]' is not directly connected to top level port. 'IBUF_LOW_PWR' is ignored by Vivado but preserved for implementation tool. [D:/Suncai/Project_CMOS_FDD_NEW/Project_CMOS_FDD.runs/impl_1/.Xil/Vivado-4512-DESKTOP-4TNH1AT/dcp_4/DDR_FDD_IN.edf:795]
+WARNING: [Constraints 18-550] Could not create 'IOSTANDARD' constraint because net 'U_AD80305_DATA_INTF_RX/U_DDR_FDD_IN/data_in_from_pins[6]' is not directly connected to top level port. 'IOSTANDARD' is ignored by Vivado but preserved for implementation tool. [D:/Suncai/Project_CMOS_FDD_NEW/Project_CMOS_FDD.runs/impl_1/.Xil/Vivado-4512-DESKTOP-4TNH1AT/dcp_4/DDR_FDD_IN.edf:796]
+WARNING: [Constraints 18-550] Could not create 'IBUF_LOW_PWR' constraint because net 'U_AD80305_DATA_INTF_RX/U_DDR_FDD_IN/data_in_from_pins[7]' is not directly connected to top level port. 'IBUF_LOW_PWR' is ignored by Vivado but preserved for implementation tool. [D:/Suncai/Project_CMOS_FDD_NEW/Project_CMOS_FDD.runs/impl_1/.Xil/Vivado-4512-DESKTOP-4TNH1AT/dcp_4/DDR_FDD_IN.edf:803]
+WARNING: [Constraints 18-550] Could not create 'IOSTANDARD' constraint because net 'U_AD80305_DATA_INTF_RX/U_DDR_FDD_IN/data_in_from_pins[7]' is not directly connected to top level port. 'IOSTANDARD' is ignored by Vivado but preserved for implementation tool. [D:/Suncai/Project_CMOS_FDD_NEW/Project_CMOS_FDD.runs/impl_1/.Xil/Vivado-4512-DESKTOP-4TNH1AT/dcp_4/DDR_FDD_IN.edf:804]
+WARNING: [Constraints 18-550] Could not create 'IBUF_LOW_PWR' constraint because net 'U_AD80305_DATA_INTF_RX/U_DDR_FDD_IN/data_in_from_pins[8]' is not directly connected to top level port. 'IBUF_LOW_PWR' is ignored by Vivado but preserved for implementation tool. [D:/Suncai/Project_CMOS_FDD_NEW/Project_CMOS_FDD.runs/impl_1/.Xil/Vivado-4512-DESKTOP-4TNH1AT/dcp_4/DDR_FDD_IN.edf:811]
+WARNING: [Constraints 18-550] Could not create 'IOSTANDARD' constraint because net 'U_AD80305_DATA_INTF_RX/U_DDR_FDD_IN/data_in_from_pins[8]' is not directly connected to top level port. 'IOSTANDARD' is ignored by Vivado but preserved for implementation tool. [D:/Suncai/Project_CMOS_FDD_NEW/Project_CMOS_FDD.runs/impl_1/.Xil/Vivado-4512-DESKTOP-4TNH1AT/dcp_4/DDR_FDD_IN.edf:812]
+WARNING: [Constraints 18-550] Could not create 'IBUF_LOW_PWR' constraint because net 'U_AD80305_DATA_INTF_RX/U_DDR_FDD_IN/data_in_from_pins[9]' is not directly connected to top level port. 'IBUF_LOW_PWR' is ignored by Vivado but preserved for implementation tool. [D:/Suncai/Project_CMOS_FDD_NEW/Project_CMOS_FDD.runs/impl_1/.Xil/Vivado-4512-DESKTOP-4TNH1AT/dcp_4/DDR_FDD_IN.edf:819]
+WARNING: [Constraints 18-550] Could not create 'IOSTANDARD' constraint because net 'U_AD80305_DATA_INTF_RX/U_DDR_FDD_IN/data_in_from_pins[9]' is not directly connected to top level port. 'IOSTANDARD' is ignored by Vivado but preserved for implementation tool. [D:/Suncai/Project_CMOS_FDD_NEW/Project_CMOS_FDD.runs/impl_1/.Xil/Vivado-4512-DESKTOP-4TNH1AT/dcp_4/DDR_FDD_IN.edf:820]
+WARNING: [Constraints 18-550] Could not create 'IBUF_LOW_PWR' constraint because net 'U_AD80305_DATA_INTF_TX/U_DDR_FDD_OUT/clk_in' is not directly connected to top level port. 'IBUF_LOW_PWR' is ignored by Vivado but preserved for implementation tool. [D:/Suncai/Project_CMOS_FDD_NEW/Project_CMOS_FDD.runs/impl_1/.Xil/Vivado-4512-DESKTOP-4TNH1AT/dcp_5/DDR_FDD_OUT.edf:685]
+WARNING: [Constraints 18-550] Could not create 'IOSTANDARD' constraint because net 'U_AD80305_DATA_INTF_TX/U_DDR_FDD_OUT/clk_in' is not directly connected to top level port. 'IOSTANDARD' is ignored by Vivado but preserved for implementation tool. [D:/Suncai/Project_CMOS_FDD_NEW/Project_CMOS_FDD.runs/impl_1/.Xil/Vivado-4512-DESKTOP-4TNH1AT/dcp_5/DDR_FDD_OUT.edf:686]
+WARNING: [Constraints 18-550] Could not create 'IBUF_LOW_PWR' constraint because net 'U_PLL/clk_in1' is not directly connected to top level port. 'IBUF_LOW_PWR' is ignored by Vivado but preserved for implementation tool. [D:/Suncai/Project_CMOS_FDD_NEW/Project_CMOS_FDD.runs/impl_1/.Xil/Vivado-4512-DESKTOP-4TNH1AT/dcp_2/clk_wiz_0.edf:357]
+Parsing XDC File [D:/Suncai/Project_CMOS_FDD_NEW/.Xil/Vivado-5528-DESKTOP-4TNH1AT/dcp/PICO_ICS_FDD_early.xdc]
+INFO: [Timing 38-35] Done setting XDC timing constraints. [D:/Suncai/Project_CMOS_FDD_NEW/Project_CMOS_FDD.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0.xdc:56]
+INFO: [Timing 38-2] Deriving generated clocks [D:/Suncai/Project_CMOS_FDD_NEW/Project_CMOS_FDD.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0.xdc:56]
+get_clocks: Time (s): cpu = 00:00:11 ; elapsed = 00:00:11 . Memory (MB): peak = 1871.168 ; gain = 527.039
+Finished Parsing XDC File [D:/Suncai/Project_CMOS_FDD_NEW/.Xil/Vivado-5528-DESKTOP-4TNH1AT/dcp/PICO_ICS_FDD_early.xdc]
+Parsing XDC File [D:/Suncai/Project_CMOS_FDD_NEW/.Xil/Vivado-5528-DESKTOP-4TNH1AT/dcp/PICO_ICS_FDD.xdc]
+Finished Parsing XDC File [D:/Suncai/Project_CMOS_FDD_NEW/.Xil/Vivado-5528-DESKTOP-4TNH1AT/dcp/PICO_ICS_FDD.xdc]
+Reading XDEF placement.
+Reading placer database...
+Reading XDEF routing.
+Read XDEF File: Time (s): cpu = 00:00:01 ; elapsed = 00:00:01 . Memory (MB): peak = 1902.996 ; gain = 0.000
+Restored from archive | CPU: 1.000000 secs | Memory: 0.000000 MB |
+Finished XDEF File Restore: Time (s): cpu = 00:00:01 ; elapsed = 00:00:01 . Memory (MB): peak = 1902.996 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 430 instances were transformed.
+  CFGLUT5 => CFGLUT5 (SRLC32E, SRL16E): 392 instances
+  RAM32M => RAM32M (RAMD32, RAMD32, RAMD32, RAMD32, RAMD32, RAMD32, RAMS32, RAMS32): 6 instances
+  RAM64M => RAM64M (RAMD64E, RAMD64E, RAMD64E, RAMD64E): 32 instances
+
+INFO: [Common 17-41] Interrupt caught. Command should exit soon.
+open_run: Time (s): cpu = 00:00:34 ; elapsed = 00:00:26 . Memory (MB): peak = 2160.152 ; gain = 1093.766
+INFO: [Common 17-344] 'open_run' was cancelled
+CRITICAL WARNING: [Timing 38-282] The design failed to meet the timing requirements. Please see the timing summary report for details on the timing violations.
+open_hw
+INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121
+INFO: [Labtools 27-2222] Launching hw_server...
+INFO: [Labtools 27-2221] Launch Output:
+
+****** Xilinx hw_server v2015.2
+  **** Build date : Jun 26 2015-16:56:39
+    ** Copyright 1986-1999, 2001-2015 Xilinx, Inc. All Rights Reserved.
+
+
+connect_hw_server -url localhost:3121
+INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121
+current_hw_target [get_hw_targets */xilinx_tcf/Digilent/210276689290B]
+set_property PARAM.FREQUENCY 15000000 [get_hw_targets */xilinx_tcf/Digilent/210276689290B]
+open_hw_target
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210276689290B
+set_property PROGRAM.FILE {D:/Suncai/Project_CMOS_FDD_NEW/Project_CMOS_FDD.runs/impl_1/PICO_ICS_FDD.bit} [lindex [get_hw_devices] 0]
+set_property PROBES.FILE {D:/Suncai/Project_CMOS_FDD_NEW/Project_CMOS_FDD.runs/impl_1/debug_nets.ltx} [lindex [get_hw_devices] 0]
+current_hw_device [lindex [get_hw_devices] 0]
+refresh_hw_device [lindex [get_hw_devices] 0]
+INFO: [Labtools 27-1435] Device xc7a200t (JTAG device index = 0) is not programmed (DONE status = 0).
+set_property PROBES.FILE {D:/Suncai/Project_CMOS_FDD_NEW/Project_CMOS_FDD.runs/impl_1/debug_nets.ltx} [lindex [get_hw_devices] 0]
+set_property PROGRAM.FILE {D:/Suncai/Project_CMOS_FDD_NEW/Project_CMOS_FDD.runs/impl_1/PICO_ICS_FDD.bit} [lindex [get_hw_devices] 0]
+program_hw_devices [lindex [get_hw_devices] 0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices] 0]
+INFO: [Labtools 27-2302] Device xc7a200t (JTAG device index = 0) is programmed with a design that has 1 ILA core(s).
+INFO: [Labtools 27-2302] Device xc7a200t (JTAG device index = 0) is programmed with a design that has 1 VIO core(s).
+WARNING: [Labtools 27-1952] VIO hw_probe OUTPUT_VALUE properties for hw_vio(s) [hw_vio_1] differ from output values in the VIO core(s).
+Resolution: 
+To synchronize the hw_probes properties and the VIO core outputs choose one of the following alternatives:
+  1) Execute the command 'Commit Output Values to VIO Core', to write down the hw_probe values to the core.
+  2) Execute the command 'Refresh Input and Output Values from VIO Core', to update the hw_probe properties with the core values.
+  3) First restore initial values in the core with the command 'Reset VIO Core Outputs', and then execute the command 'Refresh Input and Output Values from VIO Core'.
+display_hw_ila_data [ get_hw_ila_data hw_ila_data_1]
+set_property OUTPUT_VALUE 2 [get_hw_probes MODSET -of_objects [get_hw_vios hw_vio_1]]
+commit_hw_vio [get_hw_probes {MODSET} -of_objects [get_hw_vios hw_vio_1]]
+set_property OUTPUT_VALUE 1 [get_hw_probes MODSET -of_objects [get_hw_vios hw_vio_1]]
+commit_hw_vio [get_hw_probes {MODSET} -of_objects [get_hw_vios hw_vio_1]]
+set_property OUTPUT_VALUE 0 [get_hw_probes MODSET -of_objects [get_hw_vios hw_vio_1]]
+commit_hw_vio [get_hw_probes {MODSET} -of_objects [get_hw_vios hw_vio_1]]
+ERROR: [Xicom 50-38] xicom: Core access failed. Check cable connectivity and that the target board is powered up then use the disconnect_hw_server and connect_hw_server to re-initialize the hardware target. Use open_hw_target to re-register the hardware device.
+ERROR: [Xicom 50-38] xicom: Core access failed. Check cable connectivity and that the target board is powered up then use the disconnect_hw_server and connect_hw_server to re-initialize the hardware target. Use open_hw_target to re-register the hardware device.
+ERROR: [Xicom 50-38] xicom: Core access failed. Check cable connectivity and that the target board is powered up then use the disconnect_hw_server and connect_hw_server to re-initialize the hardware target. Use open_hw_target to re-register the hardware device.
+ERROR: [Xicom 50-38] xicom: Core access failed. Check cable connectivity and that the target board is powered up then use the disconnect_hw_server and connect_hw_server to re-initialize the hardware target. Use open_hw_target to re-register the hardware device.
+ERROR: [Labtools 27-3175] Target jsn-Nexys Video-210276689290B is no longer available.
+Please use disconnect_hw_server to close the current server connection. Check cable connectivity and that the target board is powered up.
+Restart the hw_server application running on host localhost, port 3121 and then use connect_hw_server to re-establish connection to target.
+close_hw_target
+INFO: [Labtoolstcl 44-464] Closing hw_target localhost:3121/xilinx_tcf/Digilent/210276689290B
+close_hw
+open_hw
+connect_hw_server
+INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121
+open_hw_target [lindex [get_hw_targets -of_objects [get_hw_servers localhost]] 0]
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210276689290B
+set_property PROGRAM.FILE {D:/Suncai/Project_CMOS_FDD_NEW/Project_CMOS_FDD.runs/impl_1/PICO_ICS_FDD.bit} [lindex [get_hw_devices] 0]
+set_property PROBES.FILE {D:/Suncai/Project_CMOS_FDD_NEW/Project_CMOS_FDD.runs/impl_1/debug_nets.ltx} [lindex [get_hw_devices] 0]
+current_hw_device [lindex [get_hw_devices] 0]
+refresh_hw_device [lindex [get_hw_devices] 0]
+INFO: [Labtools 27-2302] Device xc7a200t (JTAG device index = 0) is programmed with a design that has 1 ILA core(s).
+ERROR: [Labtools 27-1974] Mismatch between the design programmed into the device xc7a200t_0 and the probes file D:/Suncai/Project_CMOS_FDD_NEW/Project_CMOS_FDD.runs/impl_1/debug_nets.ltx.
+The device design has 1 ILA core(s) and 0 VIO core(s). The probes file has 1 ILA core(s) and 1 VIO core(s).
+Resolution: 
+1. Reprogram device with the correct programming file and associated probes file OR
+2. Goto device properties and associate the correct probes file with the programming file already programmed in the device.
+set_property PROBES.FILE {D:/Suncai/Project_CMOS_FDD_NEW/Project_CMOS_FDD.runs/impl_1/debug_nets.ltx} [lindex [get_hw_devices] 0]
+set_property PROGRAM.FILE {D:/Suncai/Project_CMOS_FDD_NEW/Project_CMOS_FDD.runs/impl_1/PICO_ICS_FDD.bit} [lindex [get_hw_devices] 0]
+program_hw_devices [lindex [get_hw_devices] 0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices] 0]
+INFO: [Labtools 27-2302] Device xc7a200t (JTAG device index = 0) is programmed with a design that has 1 ILA core(s).
+INFO: [Labtools 27-2302] Device xc7a200t (JTAG device index = 0) is programmed with a design that has 1 VIO core(s).
+display_hw_ila_data [ get_hw_ila_data hw_ila_data_1]
+set_property OUTPUT_VALUE 2 [get_hw_probes MODSET -of_objects [get_hw_vios hw_vio_1]]
+commit_hw_vio [get_hw_probes {MODSET} -of_objects [get_hw_vios hw_vio_1]]
+close_hw
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+[Fri Nov 18 11:47:22 2016] Launched synth_1...
+Run output will be captured here: D:/Suncai/Project_CMOS_FDD_NEW/Project_CMOS_FDD.runs/synth_1/runme.log
+[Fri Nov 18 11:47:22 2016] Launched impl_1...
+Run output will be captured here: D:/Suncai/Project_CMOS_FDD_NEW/Project_CMOS_FDD.runs/impl_1/runme.log
+open_hw
+connect_hw_server
+INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121
+open_hw_target [lindex [get_hw_targets -of_objects [get_hw_servers localhost]] 0]
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210276689290B
+set_property PROGRAM.FILE {D:/Suncai/Project_CMOS_FDD_NEW/Project_CMOS_FDD.runs/impl_1/PICO_ICS_FDD.bit} [lindex [get_hw_devices] 0]
+set_property PROBES.FILE {D:/Suncai/Project_CMOS_FDD_NEW/Project_CMOS_FDD.runs/impl_1/debug_nets.ltx} [lindex [get_hw_devices] 0]
+current_hw_device [lindex [get_hw_devices] 0]
+refresh_hw_device [lindex [get_hw_devices] 0]
+INFO: [Labtools 27-2302] Device xc7a200t (JTAG device index = 0) is programmed with a design that has 1 ILA core(s).
+ERROR: [Labtools 27-1974] Mismatch between the design programmed into the device xc7a200t_0 and the probes file D:/Suncai/Project_CMOS_FDD_NEW/Project_CMOS_FDD.runs/impl_1/debug_nets.ltx.
+The device design has 1 ILA core(s) and 0 VIO core(s). The probes file has 1 ILA core(s) and 1 VIO core(s).
+Resolution: 
+1. Reprogram device with the correct programming file and associated probes file OR
+2. Goto device properties and associate the correct probes file with the programming file already programmed in the device.
+set_property PROBES.FILE {D:/Suncai/Project_CMOS_FDD_NEW/Project_CMOS_FDD.runs/impl_1/debug_nets.ltx} [lindex [get_hw_devices] 0]
+set_property PROGRAM.FILE {D:/Suncai/Project_CMOS_FDD_NEW/Project_CMOS_FDD.runs/impl_1/PICO_ICS_FDD.bit} [lindex [get_hw_devices] 0]
+program_hw_devices [lindex [get_hw_devices] 0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices] 0]
+INFO: [Labtools 27-2302] Device xc7a200t (JTAG device index = 0) is programmed with a design that has 1 ILA core(s).
+INFO: [Labtools 27-2302] Device xc7a200t (JTAG device index = 0) is programmed with a design that has 1 VIO core(s).
+WARNING: [Labtools 27-1952] VIO hw_probe OUTPUT_VALUE properties for hw_vio(s) [hw_vio_1] differ from output values in the VIO core(s).
+Resolution: 
+To synchronize the hw_probes properties and the VIO core outputs choose one of the following alternatives:
+  1) Execute the command 'Commit Output Values to VIO Core', to write down the hw_probe values to the core.
+  2) Execute the command 'Refresh Input and Output Values from VIO Core', to update the hw_probe properties with the core values.
+  3) First restore initial values in the core with the command 'Reset VIO Core Outputs', and then execute the command 'Refresh Input and Output Values from VIO Core'.
+display_hw_ila_data [ get_hw_ila_data hw_ila_data_1]
+set_property PROBES.FILE {D:/Suncai/Project_CMOS_FDD_NEW/Project_CMOS_FDD.runs/impl_1/debug_nets.ltx} [lindex [get_hw_devices] 0]
+set_property PROGRAM.FILE {D:/Suncai/Project_CMOS_FDD_NEW/Project_CMOS_FDD.runs/impl_1/PICO_ICS_FDD.bit} [lindex [get_hw_devices] 0]
+program_hw_devices [lindex [get_hw_devices] 0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices] 0]
+INFO: [Labtools 27-2302] Device xc7a200t (JTAG device index = 0) is programmed with a design that has 1 ILA core(s).
+INFO: [Labtools 27-2302] Device xc7a200t (JTAG device index = 0) is programmed with a design that has 1 VIO core(s).
+WARNING: [Labtools 27-1952] VIO hw_probe OUTPUT_VALUE properties for hw_vio(s) [hw_vio_1] differ from output values in the VIO core(s).
+Resolution: 
+To synchronize the hw_probes properties and the VIO core outputs choose one of the following alternatives:
+  1) Execute the command 'Commit Output Values to VIO Core', to write down the hw_probe values to the core.
+  2) Execute the command 'Refresh Input and Output Values from VIO Core', to update the hw_probe properties with the core values.
+  3) First restore initial values in the core with the command 'Reset VIO Core Outputs', and then execute the command 'Refresh Input and Output Values from VIO Core'.
+set_property OUTPUT_VALUE 0 [get_hw_probes MODSET -of_objects [get_hw_vios hw_vio_1]]
+commit_hw_vio [get_hw_probes {MODSET} -of_objects [get_hw_vios hw_vio_1]]
+set_property OUTPUT_VALUE 2 [get_hw_probes MODSET -of_objects [get_hw_vios hw_vio_1]]
+commit_hw_vio [get_hw_probes {MODSET} -of_objects [get_hw_vios hw_vio_1]]
+close_hw
+exit
+INFO: [Common 17-206] Exiting Vivado at Fri Nov 18 12:22:38 2016...

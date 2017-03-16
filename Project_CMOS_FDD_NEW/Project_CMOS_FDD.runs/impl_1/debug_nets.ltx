@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<probeData version="1" minor="1">
+  <probeset name="EDA_PROBESET" active="true">
+    <probe type="ila" busType="net" source="netlist" spec="ILA_V2_RT">
+      <probeOptions Id="DebugProbeParams">
+        <Option Id="COMPARE_VALUE.0" value="eq1&apos;bX"/>
+        <Option Id="CORE_LOCATION" value="1:0"/>
+        <Option Id="HW_ILA" value="U_ILA_RX_IQ"/>
+        <Option Id="PROBE_PORT" value="0"/>
+        <Option Id="PROBE_PORT_BITS" value="0"/>
+        <Option Id="PROBE_PORT_BIT_COUNT" value="1"/>
+      </probeOptions>
+      <nets>
+        <net name="Ad80305_data_clk_p_IBUF"/>
+      </nets>
+    </probe>
+    <probe type="ila" busType="net" source="netlist" spec="ILA_V2_RT">
+      <probeOptions Id="DebugProbeParams">
+        <Option Id="COMPARE_VALUE.0" value="eq1&apos;bX"/>
+        <Option Id="CORE_LOCATION" value="1:0"/>
+        <Option Id="HW_ILA" value="U_ILA_RX_IQ"/>
+        <Option Id="PROBE_PORT" value="1"/>
+        <Option Id="PROBE_PORT_BITS" value="0"/>
+        <Option Id="PROBE_PORT_BIT_COUNT" value="1"/>
+      </probeOptions>
+      <nets>
+        <net name="Ad80305_rx_frame_p_IBUF"/>
+      </nets>
+    </probe>
+    <probe type="ila" busType="bus" source="netlist" spec="ILA_V2_RT">
+      <probeOptions Id="DebugProbeParams">
+        <Option Id="COMPARE_VALUE.0" value="eq12&apos;hXXX"/>
+        <Option Id="CORE_LOCATION" value="1:0"/>
+        <Option Id="HW_ILA" value="U_ILA_RX_IQ"/>
+        <Option Id="PROBE_PORT" value="2"/>
+        <Option Id="PROBE_PORT_BITS" value="0"/>
+        <Option Id="PROBE_PORT_BIT_COUNT" value="12"/>
+      </probeOptions>
+      <nets>
+        <net name="Ad80305_p0_d_IBUF[11]"/>
+        <net name="Ad80305_p0_d_IBUF[10]"/>
+        <net name="Ad80305_p0_d_IBUF[9]"/>
+        <net name="Ad80305_p0_d_IBUF[8]"/>
+        <net name="Ad80305_p0_d_IBUF[7]"/>
+        <net name="Ad80305_p0_d_IBUF[6]"/>
+        <net name="Ad80305_p0_d_IBUF[5]"/>
+        <net name="Ad80305_p0_d_IBUF[4]"/>
+        <net name="Ad80305_p0_d_IBUF[3]"/>
+        <net name="Ad80305_p0_d_IBUF[2]"/>
+        <net name="Ad80305_p0_d_IBUF[1]"/>
+        <net name="Ad80305_p0_d_IBUF[0]"/>
+      </nets>
+    </probe>
+  </probeset>
+</probeData>

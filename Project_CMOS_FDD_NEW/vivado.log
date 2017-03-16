@@ -1,0 +1,430 @@
+#-----------------------------------------------------------
+# Vivado v2015.2 (64-bit)
+# SW Build 1266856 on Fri Jun 26 16:35:25 MDT 2015
+# IP Build 1264090 on Wed Jun 24 14:22:01 MDT 2015
+# Start of session at: Thu Nov 17 21:37:19 2016
+# Process ID: 16760
+# Log file: D:/Suncai/Project_CMOS_FDD_NEW/vivado.log
+# Journal file: D:/Suncai/Project_CMOS_FDD_NEW\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project D:/Suncai/Project_CMOS_FDD_NEW/Project_CMOS_FDD.xpr
+INFO: [Project 1-313] Project file moved from 'E:/Project_CMOS_FDD_NEW' since last save.
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'D:/Xilinx/Vivado/2015.2/data/ip'.
+open_project: Time (s): cpu = 00:00:16 ; elapsed = 00:00:08 . Memory (MB): peak = 921.438 ; gain = 256.539
+open_hw
+connect_hw_server
+INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121
+open_hw_target [lindex [get_hw_targets -of_objects [get_hw_servers localhost]] 0]
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210276689290B
+set_property PROGRAM.FILE {D:/Suncai/Project_CMOS_FDD_NEW/Project_CMOS_FDD.runs/impl_1/PICO_ICS_FDD.bit} [lindex [get_hw_devices] 0]
+set_property PROBES.FILE {D:/Suncai/Project_CMOS_FDD_NEW/Project_CMOS_FDD.runs/impl_1/debug_nets.ltx} [lindex [get_hw_devices] 0]
+current_hw_device [lindex [get_hw_devices] 0]
+refresh_hw_device [lindex [get_hw_devices] 0]
+INFO: [Labtools 27-1435] Device xc7a200t (JTAG device index = 0) is not programmed (DONE status = 0).
+ERROR: [Xicom 50-38] xicom: Core access failed. Check cable connectivity and that the target board is powered up then use the disconnect_hw_server and connect_hw_server to re-initialize the hardware target. Use open_hw_target to re-register the hardware device.
+ERROR: [Xicom 50-38] xicom: Device:0, user chain number:0, slave index:0, is not a valid CseXsdb Slave core.
+ERROR: [Labtools 27-3176] hw_server failed during internal command.
+Resolution: Check that the hw_server is running and the hardware connectivity to the target
+set_property PROBES.FILE {D:/Suncai/Project_CMOS_FDD_NEW/Project_CMOS_FDD.runs/impl_1/debug_nets.ltx} [lindex [get_hw_devices] 0]
+set_property PROGRAM.FILE {D:/Suncai/Project_CMOS_FDD_NEW/Project_CMOS_FDD.runs/impl_1/PICO_ICS_FDD.bit} [lindex [get_hw_devices] 0]
+program_hw_devices [lindex [get_hw_devices] 0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices] 0]
+INFO: [Labtools 27-2302] Device xc7a200t (JTAG device index = 0) is programmed with a design that has 1 ILA core(s).
+display_hw_ila_data [ get_hw_ila_data hw_ila_data_1]
+run_hw_ila hw_ila_1
+INFO: [Labtools 27-1964] The ILA core 'hw_ila_1' trigger was armed at 2016-Nov-17 21:38:32
+wait_on_hw_ila hw_ila_1
+display_hw_ila_data [upload_hw_ila_data hw_ila_1]
+INFO: [Labtools 27-1966] The ILA core 'hw_ila_1' triggered at 2016-Nov-17 21:38:32
+run_hw_ila hw_ila_1
+INFO: [Labtools 27-1964] The ILA core 'hw_ila_1' trigger was armed at 2016-Nov-17 21:40:08
+wait_on_hw_ila hw_ila_1
+display_hw_ila_data [upload_hw_ila_data hw_ila_1]
+INFO: [Labtools 27-1966] The ILA core 'hw_ila_1' triggered at 2016-Nov-17 21:40:08
+run_hw_ila hw_ila_1
+INFO: [Labtools 27-1964] The ILA core 'hw_ila_1' trigger was armed at 2016-Nov-17 21:40:29
+wait_on_hw_ila hw_ila_1
+display_hw_ila_data [upload_hw_ila_data hw_ila_1]
+INFO: [Labtools 27-1966] The ILA core 'hw_ila_1' triggered at 2016-Nov-17 21:40:29
+run_hw_ila hw_ila_1
+INFO: [Labtools 27-1964] The ILA core 'hw_ila_1' trigger was armed at 2016-Nov-17 21:41:04
+wait_on_hw_ila hw_ila_1
+display_hw_ila_data [upload_hw_ila_data hw_ila_1]
+INFO: [Labtools 27-1966] The ILA core 'hw_ila_1' triggered at 2016-Nov-17 21:41:04
+run_hw_ila hw_ila_1
+INFO: [Labtools 27-1964] The ILA core 'hw_ila_1' trigger was armed at 2016-Nov-17 21:42:13
+wait_on_hw_ila hw_ila_1
+display_hw_ila_data [upload_hw_ila_data hw_ila_1]
+INFO: [Labtools 27-1966] The ILA core 'hw_ila_1' triggered at 2016-Nov-17 21:42:13
+run_hw_ila hw_ila_1
+INFO: [Labtools 27-1964] The ILA core 'hw_ila_1' trigger was armed at 2016-Nov-17 21:42:19
+wait_on_hw_ila hw_ila_1
+display_hw_ila_data [upload_hw_ila_data hw_ila_1]
+INFO: [Labtools 27-1966] The ILA core 'hw_ila_1' triggered at 2016-Nov-17 21:42:19
+run_hw_ila hw_ila_1
+INFO: [Labtools 27-1964] The ILA core 'hw_ila_1' trigger was armed at 2016-Nov-17 21:42:34
+wait_on_hw_ila hw_ila_1
+display_hw_ila_data [upload_hw_ila_data hw_ila_1]
+INFO: [Labtools 27-1966] The ILA core 'hw_ila_1' triggered at 2016-Nov-17 21:42:34
+run_hw_ila hw_ila_1
+INFO: [Labtools 27-1964] The ILA core 'hw_ila_1' trigger was armed at 2016-Nov-17 21:42:43
+wait_on_hw_ila hw_ila_1
+display_hw_ila_data [upload_hw_ila_data hw_ila_1]
+INFO: [Labtools 27-1966] The ILA core 'hw_ila_1' triggered at 2016-Nov-17 21:42:43
+run_hw_ila hw_ila_1
+INFO: [Labtools 27-1964] The ILA core 'hw_ila_1' trigger was armed at 2016-Nov-17 21:42:46
+wait_on_hw_ila hw_ila_1
+display_hw_ila_data [upload_hw_ila_data hw_ila_1]
+INFO: [Labtools 27-1966] The ILA core 'hw_ila_1' triggered at 2016-Nov-17 21:42:46
+run_hw_ila hw_ila_1
+INFO: [Labtools 27-1964] The ILA core 'hw_ila_1' trigger was armed at 2016-Nov-17 21:42:48
+wait_on_hw_ila hw_ila_1
+display_hw_ila_data [upload_hw_ila_data hw_ila_1]
+INFO: [Labtools 27-1966] The ILA core 'hw_ila_1' triggered at 2016-Nov-17 21:42:48
+run_hw_ila hw_ila_1
+INFO: [Labtools 27-1964] The ILA core 'hw_ila_1' trigger was armed at 2016-Nov-17 21:42:50
+wait_on_hw_ila hw_ila_1
+display_hw_ila_data [upload_hw_ila_data hw_ila_1]
+INFO: [Labtools 27-1966] The ILA core 'hw_ila_1' triggered at 2016-Nov-17 21:42:50
+run_hw_ila hw_ila_1
+INFO: [Labtools 27-1964] The ILA core 'hw_ila_1' trigger was armed at 2016-Nov-17 21:42:52
+wait_on_hw_ila hw_ila_1
+display_hw_ila_data [upload_hw_ila_data hw_ila_1]
+INFO: [Labtools 27-1966] The ILA core 'hw_ila_1' triggered at 2016-Nov-17 21:42:52
+run_hw_ila hw_ila_1
+INFO: [Labtools 27-1964] The ILA core 'hw_ila_1' trigger was armed at 2016-Nov-17 21:42:54
+wait_on_hw_ila hw_ila_1
+display_hw_ila_data [upload_hw_ila_data hw_ila_1]
+INFO: [Labtools 27-1966] The ILA core 'hw_ila_1' triggered at 2016-Nov-17 21:42:54
+save_wave_config {D:/Suncai/Project_CMOS_FDD_NEW/Project_CMOS_FDD.hw/hw_1/wave/hw_ila_data_1/hw_ila_data_1.wcfg}
+close_hw
+****** Webtalk v2015.2 (64-bit)
+  **** SW Build 1266856 on Fri Jun 26 16:35:25 MDT 2015
+  **** IP Build 1264090 on Wed Jun 24 14:22:01 MDT 2015
+    ** Copyright 1986-2015 Xilinx, Inc. All Rights Reserved.
+
+source D:/Suncai/Project_CMOS_FDD_NEW/Project_CMOS_FDD.hw/webtalk/labtool_webtalk.tcl -notrace
+
+    while executing
+"webtalk_transmit -clientid 2755935852 -regid "" -xml D:/Suncai/Project_CMOS_FDD_NEW/Project_CMOS_FDD.hw/webtalk/usage_statistics_ext_labtool.xml -html..."
+    (file "D:/Suncai/Project_CMOS_FDD_NEW/Project_CMOS_FDD.hw/webtalk/labtool_webtalk.tcl" line 28)
+INFO: [Common 17-206] Exiting Webtalk at Thu Nov 17 21:43:02 2016...
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+[Thu Nov 17 21:43:41 2016] Launched synth_1...
+Run output will be captured here: D:/Suncai/Project_CMOS_FDD_NEW/Project_CMOS_FDD.runs/synth_1/runme.log
+[Thu Nov 17 21:43:41 2016] Launched impl_1...
+Run output will be captured here: D:/Suncai/Project_CMOS_FDD_NEW/Project_CMOS_FDD.runs/impl_1/runme.log
+open_hw
+connect_hw_server
+INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121
+INFO: [Labtools 27-2222] Launching hw_server...
+INFO: [Labtools 27-2221] Launch Output:
+
+****** Xilinx hw_server v2015.2
+  **** Build date : Jun 26 2015-16:56:39
+    ** Copyright 1986-1999, 2001-2015 Xilinx, Inc. All Rights Reserved.
+
+
+ERROR: [Labtoolstcl 44-26] No hardware targets exist on the server [localhost]
+Check to make sure the cable targets connected to this machine are properly connected
+and powered up, then use the disconnect_hw_server and connect_hw_server commands
+to re-register the hardware targets.
+disconnect_hw_server localhost
+INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121
+connect_hw_server -url localhost:3121
+INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121
+current_hw_target [get_hw_targets */xilinx_tcf/Digilent/210276689290B]
+set_property PARAM.FREQUENCY 15000000 [get_hw_targets */xilinx_tcf/Digilent/210276689290B]
+open_hw_target
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210276689290B
+set_property PROGRAM.FILE {D:/Suncai/Project_CMOS_FDD_NEW/Project_CMOS_FDD.runs/impl_1/PICO_ICS_FDD.bit} [lindex [get_hw_devices] 0]
+set_property PROBES.FILE {D:/Suncai/Project_CMOS_FDD_NEW/Project_CMOS_FDD.runs/impl_1/debug_nets.ltx} [lindex [get_hw_devices] 0]
+current_hw_device [lindex [get_hw_devices] 0]
+refresh_hw_device [lindex [get_hw_devices] 0]
+INFO: [Labtools 27-1435] Device xc7a200t (JTAG device index = 0) is not programmed (DONE status = 0).
+set_property PROBES.FILE {D:/Suncai/Project_CMOS_FDD_NEW/Project_CMOS_FDD.runs/impl_1/debug_nets.ltx} [lindex [get_hw_devices] 0]
+set_property PROGRAM.FILE {D:/Suncai/Project_CMOS_FDD_NEW/Project_CMOS_FDD.runs/impl_1/PICO_ICS_FDD.bit} [lindex [get_hw_devices] 0]
+program_hw_devices [lindex [get_hw_devices] 0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices] 0]
+INFO: [Labtools 27-2302] Device xc7a200t (JTAG device index = 0) is programmed with a design that has 1 ILA core(s).
+display_hw_ila_data [ get_hw_ila_data hw_ila_data_1]
+run_hw_ila hw_ila_1
+INFO: [Labtools 27-1964] The ILA core 'hw_ila_1' trigger was armed at 2016-Nov-17 21:49:38
+wait_on_hw_ila hw_ila_1
+display_hw_ila_data [upload_hw_ila_data hw_ila_1]
+INFO: [Labtools 27-1966] The ILA core 'hw_ila_1' triggered at 2016-Nov-17 21:49:38
+run_hw_ila hw_ila_1
+INFO: [Labtools 27-1964] The ILA core 'hw_ila_1' trigger was armed at 2016-Nov-17 21:50:04
+wait_on_hw_ila hw_ila_1
+display_hw_ila_data [upload_hw_ila_data hw_ila_1]
+INFO: [Labtools 27-1966] The ILA core 'hw_ila_1' triggered at 2016-Nov-17 21:50:04
+close_hw
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+[Thu Nov 17 21:51:26 2016] Launched synth_1...
+Run output will be captured here: D:/Suncai/Project_CMOS_FDD_NEW/Project_CMOS_FDD.runs/synth_1/runme.log
+[Thu Nov 17 21:51:26 2016] Launched impl_1...
+Run output will be captured here: D:/Suncai/Project_CMOS_FDD_NEW/Project_CMOS_FDD.runs/impl_1/runme.log
+open_hw
+connect_hw_server
+INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121
+INFO: [Labtools 27-2222] Launching hw_server...
+INFO: [Labtools 27-2221] Launch Output:
+
+****** Xilinx hw_server v2015.2
+  **** Build date : Jun 26 2015-16:56:39
+    ** Copyright 1986-1999, 2001-2015 Xilinx, Inc. All Rights Reserved.
+
+
+open_hw_target [lindex [get_hw_targets -of_objects [get_hw_servers localhost]] 0]
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210276689290B
+set_property PROGRAM.FILE {D:/Suncai/Project_CMOS_FDD_NEW/Project_CMOS_FDD.runs/impl_1/PICO_ICS_FDD.bit} [lindex [get_hw_devices] 0]
+set_property PROBES.FILE {D:/Suncai/Project_CMOS_FDD_NEW/Project_CMOS_FDD.runs/impl_1/debug_nets.ltx} [lindex [get_hw_devices] 0]
+current_hw_device [lindex [get_hw_devices] 0]
+refresh_hw_device [lindex [get_hw_devices] 0]
+INFO: [Labtools 27-1435] Device xc7a200t (JTAG device index = 0) is not programmed (DONE status = 0).
+set_property PROBES.FILE {D:/Suncai/Project_CMOS_FDD_NEW/Project_CMOS_FDD.runs/impl_1/debug_nets.ltx} [lindex [get_hw_devices] 0]
+set_property PROGRAM.FILE {D:/Suncai/Project_CMOS_FDD_NEW/Project_CMOS_FDD.runs/impl_1/PICO_ICS_FDD.bit} [lindex [get_hw_devices] 0]
+program_hw_devices [lindex [get_hw_devices] 0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices] 0]
+INFO: [Labtools 27-2302] Device xc7a200t (JTAG device index = 0) is programmed with a design that has 1 ILA core(s).
+display_hw_ila_data [ get_hw_ila_data hw_ila_data_1]
+close_hw
+set_property -dict [list CONFIG.SELIO_BUS_IN_DELAY {FIXED} CONFIG.SELIO_BUS_IN_TAP {31}] [get_ips DDR_FDD_IN]
+generate_target all [get_files  D:/Suncai/Project_CMOS_FDD_NEW/Project_CMOS_FDD.srcs/sources_1/ip/DDR_FDD_IN/DDR_FDD_IN.xci]
+INFO: [IP_Flow 19-1686] Generating 'Instantiation Template' target for IP 'DDR_FDD_IN'...
+INFO: [IP_Flow 19-1686] Generating 'Synthesis' target for IP 'DDR_FDD_IN'...
+INFO: [IP_Flow 19-1686] Generating 'Simulation' target for IP 'DDR_FDD_IN'...
+INFO: [IP_Flow 19-1686] Generating 'Change Log' target for IP 'DDR_FDD_IN'...
+reset_run DDR_FDD_IN_synth_1
+launch_run -jobs 4 DDR_FDD_IN_synth_1
+[Thu Nov 17 21:58:38 2016] Launched DDR_FDD_IN_synth_1...
+Run output will be captured here: D:/Suncai/Project_CMOS_FDD_NEW/Project_CMOS_FDD.runs/DDR_FDD_IN_synth_1/runme.log
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+[Thu Nov 17 21:58:45 2016] Launched DDR_FDD_IN_synth_1, synth_1...
+Run output will be captured here:
+DDR_FDD_IN_synth_1: D:/Suncai/Project_CMOS_FDD_NEW/Project_CMOS_FDD.runs/DDR_FDD_IN_synth_1/runme.log
+synth_1: D:/Suncai/Project_CMOS_FDD_NEW/Project_CMOS_FDD.runs/synth_1/runme.log
+[Thu Nov 17 21:58:45 2016] Launched impl_1...
+Run output will be captured here: D:/Suncai/Project_CMOS_FDD_NEW/Project_CMOS_FDD.runs/impl_1/runme.log
+open_hw
+connect_hw_server
+INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121
+INFO: [Labtools 27-2222] Launching hw_server...
+INFO: [Labtools 27-2221] Launch Output:
+
+****** Xilinx hw_server v2015.2
+  **** Build date : Jun 26 2015-16:56:39
+    ** Copyright 1986-1999, 2001-2015 Xilinx, Inc. All Rights Reserved.
+
+
+open_hw_target [lindex [get_hw_targets -of_objects [get_hw_servers localhost]] 0]
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210276689290B
+set_property PROGRAM.FILE {D:/Suncai/Project_CMOS_FDD_NEW/Project_CMOS_FDD.runs/impl_1/PICO_ICS_FDD.bit} [lindex [get_hw_devices] 0]
+set_property PROBES.FILE {D:/Suncai/Project_CMOS_FDD_NEW/Project_CMOS_FDD.runs/impl_1/debug_nets.ltx} [lindex [get_hw_devices] 0]
+current_hw_device [lindex [get_hw_devices] 0]
+refresh_hw_device [lindex [get_hw_devices] 0]
+INFO: [Labtools 27-1435] Device xc7a200t (JTAG device index = 0) is not programmed (DONE status = 0).
+set_property PROBES.FILE {D:/Suncai/Project_CMOS_FDD_NEW/Project_CMOS_FDD.runs/impl_1/debug_nets.ltx} [lindex [get_hw_devices] 0]
+set_property PROGRAM.FILE {D:/Suncai/Project_CMOS_FDD_NEW/Project_CMOS_FDD.runs/impl_1/PICO_ICS_FDD.bit} [lindex [get_hw_devices] 0]
+program_hw_devices [lindex [get_hw_devices] 0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices] 0]
+INFO: [Labtools 27-2302] Device xc7a200t (JTAG device index = 0) is programmed with a design that has 1 ILA core(s).
+display_hw_ila_data [ get_hw_ila_data hw_ila_data_1]
+close_hw
+set_property -dict [list CONFIG.SELIO_BUS_IN_DELAY {NONE}] [get_ips DDR_FDD_IN]
+generate_target all [get_files  D:/Suncai/Project_CMOS_FDD_NEW/Project_CMOS_FDD.srcs/sources_1/ip/DDR_FDD_IN/DDR_FDD_IN.xci]
+INFO: [IP_Flow 19-1686] Generating 'Instantiation Template' target for IP 'DDR_FDD_IN'...
+INFO: [IP_Flow 19-1686] Generating 'Synthesis' target for IP 'DDR_FDD_IN'...
+INFO: [IP_Flow 19-1686] Generating 'Simulation' target for IP 'DDR_FDD_IN'...
+INFO: [IP_Flow 19-1686] Generating 'Change Log' target for IP 'DDR_FDD_IN'...
+reset_run DDR_FDD_IN_synth_1
+launch_run -jobs 4 DDR_FDD_IN_synth_1
+[Thu Nov 17 22:06:44 2016] Launched DDR_FDD_IN_synth_1...
+Run output will be captured here: D:/Suncai/Project_CMOS_FDD_NEW/Project_CMOS_FDD.runs/DDR_FDD_IN_synth_1/runme.log
+update_compile_order -fileset sources_1
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+[Thu Nov 17 22:09:19 2016] Launched synth_1...
+Run output will be captured here: D:/Suncai/Project_CMOS_FDD_NEW/Project_CMOS_FDD.runs/synth_1/runme.log
+[Thu Nov 17 22:09:19 2016] Launched impl_1...
+Run output will be captured here: D:/Suncai/Project_CMOS_FDD_NEW/Project_CMOS_FDD.runs/impl_1/runme.log
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+[Thu Nov 17 22:11:46 2016] Launched synth_1...
+Run output will be captured here: D:/Suncai/Project_CMOS_FDD_NEW/Project_CMOS_FDD.runs/synth_1/runme.log
+[Thu Nov 17 22:11:46 2016] Launched impl_1...
+Run output will be captured here: D:/Suncai/Project_CMOS_FDD_NEW/Project_CMOS_FDD.runs/impl_1/runme.log
+WARNING: [IP_Flow 19-4067] Ignoring invalid widget type specified checkbox.Providing a default widget
+set_property -dict [list CONFIG.C_DATA_DEPTH {131072} CONFIG.C_NUM_OF_PROBES {3} CONFIG.C_PROBE6_WIDTH {1} CONFIG.C_PROBE5_WIDTH {1} CONFIG.C_PROBE4_WIDTH {1}] [get_ips ila_0]
+generate_target all [get_files  D:/Suncai/Project_CMOS_FDD_NEW/Project_CMOS_FDD.srcs/sources_1/ip/ila_0/ila_0.xci]
+INFO: [IP_Flow 19-1686] Generating 'Instantiation Template' target for IP 'ila_0'...
+INFO: [IP_Flow 19-1686] Generating 'Synthesis' target for IP 'ila_0'...
+INFO: [IP_Flow 19-1686] Generating 'Simulation' target for IP 'ila_0'...
+INFO: [IP_Flow 19-1686] Generating 'Change Log' target for IP 'ila_0'...
+reset_run ila_0_synth_1
+launch_run -jobs 4 ila_0_synth_1
+[Thu Nov 17 22:12:52 2016] Launched ila_0_synth_1...
+Run output will be captured here: D:/Suncai/Project_CMOS_FDD_NEW/Project_CMOS_FDD.runs/ila_0_synth_1/runme.log
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+[Thu Nov 17 22:13:22 2016] Launched ila_0_synth_1, synth_1...
+Run output will be captured here:
+ila_0_synth_1: D:/Suncai/Project_CMOS_FDD_NEW/Project_CMOS_FDD.runs/ila_0_synth_1/runme.log
+synth_1: D:/Suncai/Project_CMOS_FDD_NEW/Project_CMOS_FDD.runs/synth_1/runme.log
+[Thu Nov 17 22:13:22 2016] Launched impl_1...
+Run output will be captured here: D:/Suncai/Project_CMOS_FDD_NEW/Project_CMOS_FDD.runs/impl_1/runme.log
+open_hw
+connect_hw_server
+INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121
+INFO: [Labtools 27-2222] Launching hw_server...
+INFO: [Labtools 27-2221] Launch Output:
+
+****** Xilinx hw_server v2015.2
+  **** Build date : Jun 26 2015-16:56:39
+    ** Copyright 1986-1999, 2001-2015 Xilinx, Inc. All Rights Reserved.
+
+
+open_hw_target [lindex [get_hw_targets -of_objects [get_hw_servers localhost]] 0]
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210276689290B
+set_property PROGRAM.FILE {D:/Suncai/Project_CMOS_FDD_NEW/Project_CMOS_FDD.runs/impl_1/PICO_ICS_FDD.bit} [lindex [get_hw_devices] 0]
+set_property PROBES.FILE {D:/Suncai/Project_CMOS_FDD_NEW/Project_CMOS_FDD.runs/impl_1/debug_nets.ltx} [lindex [get_hw_devices] 0]
+current_hw_device [lindex [get_hw_devices] 0]
+refresh_hw_device [lindex [get_hw_devices] 0]
+INFO: [Labtools 27-1435] Device xc7a200t (JTAG device index = 0) is not programmed (DONE status = 0).
+set_property PROBES.FILE {D:/Suncai/Project_CMOS_FDD_NEW/Project_CMOS_FDD.runs/impl_1/debug_nets.ltx} [lindex [get_hw_devices] 0]
+set_property PROGRAM.FILE {D:/Suncai/Project_CMOS_FDD_NEW/Project_CMOS_FDD.runs/impl_1/PICO_ICS_FDD.bit} [lindex [get_hw_devices] 0]
+program_hw_devices [lindex [get_hw_devices] 0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices] 0]
+INFO: [Labtools 27-2302] Device xc7a200t (JTAG device index = 0) is programmed with a design that has 1 ILA core(s).
+display_hw_ila_data [ get_hw_ila_data hw_ila_data_1]
+WARNING: Simulation object Clk_DDR_IN was not found in the design.
+WARNING: Simulation object Data_DDR_IN was not found in the design.
+WARNING: Simulation object Data_in_i_ad80305 was not found in the design.
+WARNING: Simulation object Data_in_q_ad80305 was not found in the design.
+run_hw_ila hw_ila_1
+INFO: [Labtools 27-1964] The ILA core 'hw_ila_1' trigger was armed at 2016-Nov-17 22:21:16
+wait_on_hw_ila hw_ila_1
+display_hw_ila_data [upload_hw_ila_data hw_ila_1]
+INFO: [Labtools 27-1966] The ILA core 'hw_ila_1' triggered at 2016-Nov-17 22:21:16
+run_hw_ila hw_ila_1
+INFO: [Labtools 27-1964] The ILA core 'hw_ila_1' trigger was armed at 2016-Nov-17 22:21:35
+wait_on_hw_ila hw_ila_1
+display_hw_ila_data [upload_hw_ila_data hw_ila_1]
+INFO: [Labtools 27-1966] The ILA core 'hw_ila_1' triggered at 2016-Nov-17 22:21:35
+run_hw_ila hw_ila_1
+INFO: [Labtools 27-1964] The ILA core 'hw_ila_1' trigger was armed at 2016-Nov-17 22:21:37
+wait_on_hw_ila hw_ila_1
+display_hw_ila_data [upload_hw_ila_data hw_ila_1]
+INFO: [Labtools 27-1966] The ILA core 'hw_ila_1' triggered at 2016-Nov-17 22:21:37
+run_hw_ila hw_ila_1
+INFO: [Labtools 27-1964] The ILA core 'hw_ila_1' trigger was armed at 2016-Nov-17 22:22:01
+wait_on_hw_ila hw_ila_1
+display_hw_ila_data [upload_hw_ila_data hw_ila_1]
+INFO: [Labtools 27-1966] The ILA core 'hw_ila_1' triggered at 2016-Nov-17 22:22:01
+run_hw_ila hw_ila_1
+INFO: [Labtools 27-1964] The ILA core 'hw_ila_1' trigger was armed at 2016-Nov-17 22:22:22
+wait_on_hw_ila hw_ila_1
+display_hw_ila_data [upload_hw_ila_data hw_ila_1]
+INFO: [Labtools 27-1966] The ILA core 'hw_ila_1' triggered at 2016-Nov-17 22:22:22
+run_hw_ila hw_ila_1
+INFO: [Labtools 27-1964] The ILA core 'hw_ila_1' trigger was armed at 2016-Nov-17 22:22:35
+wait_on_hw_ila hw_ila_1
+display_hw_ila_data [upload_hw_ila_data hw_ila_1]
+INFO: [Labtools 27-1966] The ILA core 'hw_ila_1' triggered at 2016-Nov-17 22:22:35
+run_hw_ila hw_ila_1
+INFO: [Labtools 27-1964] The ILA core 'hw_ila_1' trigger was armed at 2016-Nov-17 22:22:49
+wait_on_hw_ila hw_ila_1
+display_hw_ila_data [upload_hw_ila_data hw_ila_1]
+INFO: [Labtools 27-1966] The ILA core 'hw_ila_1' triggered at 2016-Nov-17 22:22:49
+run_hw_ila hw_ila_1
+INFO: [Labtools 27-1964] The ILA core 'hw_ila_1' trigger was armed at 2016-Nov-17 22:22:54
+wait_on_hw_ila hw_ila_1
+display_hw_ila_data [upload_hw_ila_data hw_ila_1]
+INFO: [Labtools 27-1966] The ILA core 'hw_ila_1' triggered at 2016-Nov-17 22:22:54
+run_hw_ila hw_ila_1
+INFO: [Labtools 27-1964] The ILA core 'hw_ila_1' trigger was armed at 2016-Nov-17 22:22:57
+wait_on_hw_ila hw_ila_1
+display_hw_ila_data [upload_hw_ila_data hw_ila_1]
+INFO: [Labtools 27-1966] The ILA core 'hw_ila_1' triggered at 2016-Nov-17 22:22:57
+run_hw_ila hw_ila_1
+INFO: [Labtools 27-1964] The ILA core 'hw_ila_1' trigger was armed at 2016-Nov-17 22:23:03
+wait_on_hw_ila hw_ila_1
+display_hw_ila_data [upload_hw_ila_data hw_ila_1]
+INFO: [Labtools 27-1966] The ILA core 'hw_ila_1' triggered at 2016-Nov-17 22:23:03
+run_hw_ila hw_ila_1
+INFO: [Labtools 27-1964] The ILA core 'hw_ila_1' trigger was armed at 2016-Nov-17 22:23:06
+wait_on_hw_ila hw_ila_1
+display_hw_ila_data [upload_hw_ila_data hw_ila_1]
+INFO: [Labtools 27-1966] The ILA core 'hw_ila_1' triggered at 2016-Nov-17 22:23:06
+run_hw_ila hw_ila_1
+INFO: [Labtools 27-1964] The ILA core 'hw_ila_1' trigger was armed at 2016-Nov-17 22:23:43
+wait_on_hw_ila hw_ila_1
+display_hw_ila_data [upload_hw_ila_data hw_ila_1]
+INFO: [Labtools 27-1966] The ILA core 'hw_ila_1' triggered at 2016-Nov-17 22:23:43
+close_hw
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+[Thu Nov 17 22:24:27 2016] Launched synth_1...
+Run output will be captured here: D:/Suncai/Project_CMOS_FDD_NEW/Project_CMOS_FDD.runs/synth_1/runme.log
+[Thu Nov 17 22:24:27 2016] Launched impl_1...
+Run output will be captured here: D:/Suncai/Project_CMOS_FDD_NEW/Project_CMOS_FDD.runs/impl_1/runme.log
+open_hw
+connect_hw_server
+INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121
+INFO: [Labtools 27-2222] Launching hw_server...
+INFO: [Labtools 27-2221] Launch Output:
+
+****** Xilinx hw_server v2015.2
+  **** Build date : Jun 26 2015-16:56:39
+    ** Copyright 1986-1999, 2001-2015 Xilinx, Inc. All Rights Reserved.
+
+
+open_hw_target [lindex [get_hw_targets -of_objects [get_hw_servers localhost]] 0]
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210276689290B
+set_property PROGRAM.FILE {D:/Suncai/Project_CMOS_FDD_NEW/Project_CMOS_FDD.runs/impl_1/PICO_ICS_FDD.bit} [lindex [get_hw_devices] 0]
+set_property PROBES.FILE {D:/Suncai/Project_CMOS_FDD_NEW/Project_CMOS_FDD.runs/impl_1/debug_nets.ltx} [lindex [get_hw_devices] 0]
+current_hw_device [lindex [get_hw_devices] 0]
+refresh_hw_device [lindex [get_hw_devices] 0]
+INFO: [Labtools 27-1435] Device xc7a200t (JTAG device index = 0) is not programmed (DONE status = 0).
+set_property PROBES.FILE {D:/Suncai/Project_CMOS_FDD_NEW/Project_CMOS_FDD.runs/impl_1/debug_nets.ltx} [lindex [get_hw_devices] 0]
+set_property PROGRAM.FILE {D:/Suncai/Project_CMOS_FDD_NEW/Project_CMOS_FDD.runs/impl_1/PICO_ICS_FDD.bit} [lindex [get_hw_devices] 0]
+program_hw_devices [lindex [get_hw_devices] 0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices] 0]
+INFO: [Labtools 27-2302] Device xc7a200t (JTAG device index = 0) is programmed with a design that has 1 ILA core(s).
+display_hw_ila_data [ get_hw_ila_data hw_ila_data_1]
+WARNING: Simulation object Clk_DDR_IN was not found in the design.
+WARNING: Simulation object Data_DDR_IN was not found in the design.
+WARNING: Simulation object Data_in_i_ad80305 was not found in the design.
+WARNING: Simulation object Data_in_q_ad80305 was not found in the design.
+run_hw_ila hw_ila_1
+INFO: [Labtools 27-1964] The ILA core 'hw_ila_1' trigger was armed at 2016-Nov-17 22:28:52
+wait_on_hw_ila hw_ila_1
+display_hw_ila_data [upload_hw_ila_data hw_ila_1]
+INFO: [Labtools 27-1966] The ILA core 'hw_ila_1' triggered at 2016-Nov-17 22:28:52
+run_hw_ila hw_ila_1
+INFO: [Labtools 27-1964] The ILA core 'hw_ila_1' trigger was armed at 2016-Nov-17 22:29:02
+wait_on_hw_ila hw_ila_1
+display_hw_ila_data [upload_hw_ila_data hw_ila_1]
+INFO: [Labtools 27-1966] The ILA core 'hw_ila_1' triggered at 2016-Nov-17 22:29:02
+run_hw_ila hw_ila_1
+INFO: [Labtools 27-1964] The ILA core 'hw_ila_1' trigger was armed at 2016-Nov-17 22:29:09
+wait_on_hw_ila hw_ila_1
+display_hw_ila_data [upload_hw_ila_data hw_ila_1]
+INFO: [Labtools 27-1966] The ILA core 'hw_ila_1' triggered at 2016-Nov-17 22:29:09
+close_hw
+exit
+INFO: [Common 17-206] Exiting Vivado at Thu Nov 17 22:30:44 2016...

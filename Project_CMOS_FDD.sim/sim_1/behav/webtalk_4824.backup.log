@@ -1,0 +1,16 @@
+#-----------------------------------------------------------
+# Webtalk v2015.2.1 (64-bit)
+# SW Build 1302555 on Wed Aug  5 13:06:02 MDT 2015
+# IP Build 1291990 on Mon Jul 27 03:18:52 MDT 2015
+# Start of session at: Fri Nov 18 09:44:56 2016
+# Process ID: 5844
+# Log file: E:/Project_CMOS_FDD_NEW/Project_CMOS_FDD.sim/sim_1/behav/webtalk.log
+# Journal file: E:/Project_CMOS_FDD_NEW/Project_CMOS_FDD.sim/sim_1/behav\webtalk.jou
+#-----------------------------------------------------------
+source E:/Project_CMOS_FDD_NEW/Project_CMOS_FDD.sim/sim_1/behav/xsim.dir/SIM_DDR_IN_behav/webtalk/xsim_webtalk.tcl -notrace
+webtalk_transmit: Time (s): cpu = 00:00:00 ; elapsed = 00:00:05 . Memory (MB): peak = 77.805 ; gain = 0.250
+
+    while executing
+"webtalk_transmit -clientid 722967801 -regid "" -xml E:/Project_CMOS_FDD_NEW/Project_CMOS_FDD.sim/sim_1/behav/xsim.dir/SIM_DDR_IN_behav/webtalk/usage_s..."
+    (file "E:/Project_CMOS_FDD_NEW/Project_CMOS_FDD.sim/sim_1/behav/xsim.dir/SIM_DDR_IN_behav/webtalk/xsim_webtalk.tcl" line 41)
+INFO: [Common 17-206] Exiting Webtalk at Fri Nov 18 09:45:01 2016...

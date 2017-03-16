@@ -1,0 +1,215 @@
+# Copyright (C) 1994-2014, Concept Engineering GmbH.
+# All Rights Reserved.  Cmd=logfile.
+# Nlview 6.4.12  2014-12-16 bk=1.3272 VDI=35 GEI=35 GUI=JA:1.6
+# License cookie [G|T|S|*] for HR="Hierarchical Design Inc."
+# --------------------------------------------------
+# --------------------------------------------------
+property showattribute 1
+property showcellname true
+property shadowstyle 1
+property gatecellname 2
+property showpinname 2
+property showhierpinname 2
+property showinstname false
+property boxpinsquare 2
+property boxhierpins 2
+property backgroundcolor #F8F8FF
+property boxinstcolor #000000
+property boxcolor0 #000000
+property boxpincolor #000000
+property netcolor #000000
+property buscolor #000000
+property portcolor #000000
+property portnamecolor #000000
+property boxminwidth 50
+property boxminheight 40
+module new gtmodule
+#  * Current module is gtmodule 
+load symbol QUAD v HIERBOX port i0 in port i1 in port i2 in port i3 in port i4 in
+load symbol PLL0 syn BOX port In in port Out out text PLL0 -cc 25 0 12
+load symbol PLL1 syn BOX port In in port Out out text PLL1 -cc 25 0 12
+load port REFCLK1_Q0 in -pg 1 -y 121 -x 1 -attr @fillcolor #3a5fcd
+load port REFCLK0_Q0 in -pg 1 -y 191 -x 1 -attr @fillcolor #3a5fcd
+load inst Quad0 QUAD v -pg 1 -y 1 -x 2000 -autohide -attr @cell Quad1 -attr @name {} -attr @fillcolor #d9d9d9
+attribute {pin Quad0 i0 } -attr @name {}
+attribute {pin Quad0 i1 } -attr @name {}
+attribute {pin Quad0 i2 } -attr @name {}
+attribute {pin Quad0 i3 } -attr @name {}
+attribute {pin Quad0 i4 } -attr @name {}
+attribute {hierPin Quad0 i0 } -attr @name {}
+attribute {hierPin Quad0 i1 } -attr @name {}
+attribute {hierPin Quad0 i2 } -attr @name {}
+attribute {hierPin Quad0 i3 } -attr @name {}
+attribute {hierPin Quad0 i4 } -attr @name {}
+load symbol GTP_X0Y7 syn HIERGEN port TX in port RX in
+load inst GT.0.3 GTP_X0Y7 syn -hier Quad0 -pg 1 -y 1 -x 2 -attr @name {} -attr @fillcolor #7a7a7a
+load inst pll.0.0 PLL0 syn -hier Quad0 -pg 1 -y 61 -x 1 -autohide -attr @name {} -attr @cell {} -attr @fillcolor #00868b
+attribute {pin pll.0.0 In} -attr @name {}
+attribute {pin pll.0.0 Out} -attr @name {}
+load symbol GTP_X0Y6 syn HIERGEN port TX in port RX in
+load inst GT.0.2 GTP_X0Y6 syn -hier Quad0 -pg 1 -y 2 -x 2 -attr @name {} -attr @fillcolor #7a7a7a
+load symbol GTP_X0Y5 syn HIERGEN port TX in port RX in
+load inst GT.0.1 GTP_X0Y5 syn -hier Quad0 -pg 1 -y 3 -x 2 -attr @name {} -attr @fillcolor #7a7a7a
+load inst pll.0.1 PLL1 syn -hier Quad0 -pg 1 -y 241 -x 1 -autohide -attr @name {} -attr @cell {} -attr @fillcolor #00868b
+attribute {pin pll.0.1 In} -attr @name {}
+attribute {pin pll.0.1 Out} -attr @name {}
+load symbol GTP_X0Y4 syn HIERGEN port TX in port RX in
+load inst GT.0.0 GTP_X0Y4 syn -hier Quad0 -pg 1 -y 4 -x 2 -attr @name {} -attr @fillcolor #7a7a7a
+load port GREFCLK in -pg 1 -y 261 -attr @fillcolor #ee9a00
+load net net.REFCLK1_Q0 -port REFCLK1_Q0 -pin Quad0 i1
+load net net.Quad0.pll0 -hierPin Quad0 i1 -pin pll.0.0 In
+load net net.pll0.0 -pin pll.0.0 Out -pin GT.0.0 TX
+attribute {inst pll.0.0} -attr @fillcolor #cccc00
+attribute {inst GT.0.0} -attr @fillcolor #cccc00
+load net net.REFCLK1_Q0 -port REFCLK1_Q0 -pin Quad0 i1
+load net net.Quad0.pll0 -hierPin Quad0 i1 -pin pll.0.0 In
+load net net.pll0.0 -pin pll.0.0 Out -pin GT.0.0 RX
+attribute {inst pll.0.0} -attr @fillcolor #cccc00
+attribute {inst GT.0.0} -attr @fillcolor #cccc00
+show
+# Starting Split Pages                                                   77.52
+# Split Pages 10 Comps, 3 Nets 0 NetBundles                              77.52
+# KwayPart started for 10 comps, 3 nets                                  77.52
+# Init done: 1 nodes (1 locked nodes), 0 edges                           77.52
+# Startpart done: 1 parts                                                77.52
+# KwayPart done                                                          77.52
+# End of Split Pages: 1 pages                                            77.52
+# End of Split Pages                                                     77.52
+# Generating Regions for Page 1:   10 Comps,    3 Nets                   77.52
+# Analyze                                                                77.52
+# Levelize                                                               77.52
+# End of LevelAssign mode=I, 3 Levels, 7 Comps, limit=30000              77.52
+# Nets                                                                   77.52
+# Place                                                                  77.52
+# PlaceNets                                                              77.52
+# SpaceY                                                                 77.52
+# Track                                                                  77.52
+# SpaceX                                                                 77.52
+# Wire                                                                   77.52
+# End of Wire: 2 nets, 2 ch, wire: 10-->10 (0 with wbits)                77.52
+# End of doGenerate                                                      77.52
+# Analyze                                                                77.52
+# Levelize                                                               77.52
+# End of LevelAssign mode=I, 2 Levels, 4 Comps, limit=30000              77.52
+# Nets                                                                   77.52
+# Place                                                                  77.52
+# PlaceNets                                                              77.52
+# SpaceY                                                                 77.52
+# Track                                                                  77.52
+# SpaceX                                                                 77.52
+# Wire                                                                   77.52
+# End of Wire: 1 nets, 1 ch, wire: 4-->4 (0 with wbits)                  77.52
+# End of doGenerate                                                      77.52
+# End of Generating Regions for Page 1                                   77.52
+scrollpos 168 240
+zoom -x 0 -y 0 0.68
+scrollpos 143 204
+#R0.68
+center_objects -itemized {inst GT.0.2}
+scrollpos 251 95
+#CMD scrollpos
+#R251 95
+#CMD scrollpos -10 95
+scrollpos -10 95
+selection -itemized {inst GT.0.0}
+scrollpos -10 95
+module new gtmodule
+#  * Current module is gtmodule 
+load symbol QUAD v HIERBOX port i0 in port i1 in port i2 in port i3 in port i4 in
+load symbol PLL0 syn BOX port In in port Out out text PLL0 -cc 25 0 12
+load symbol PLL1 syn BOX port In in port Out out text PLL1 -cc 25 0 12
+load port REFCLK1_Q0 in -pg 1 -y 121 -x 1 -attr @fillcolor #3a5fcd
+load port REFCLK0_Q0 in -pg 1 -y 191 -x 1 -attr @fillcolor #3a5fcd
+load inst Quad0 QUAD v -pg 1 -y 1 -x 2000 -autohide -attr @cell Quad1 -attr @name {} -attr @fillcolor #d9d9d9
+attribute {pin Quad0 i0 } -attr @name {}
+attribute {pin Quad0 i1 } -attr @name {}
+attribute {pin Quad0 i2 } -attr @name {}
+attribute {pin Quad0 i3 } -attr @name {}
+attribute {pin Quad0 i4 } -attr @name {}
+attribute {hierPin Quad0 i0 } -attr @name {}
+attribute {hierPin Quad0 i1 } -attr @name {}
+attribute {hierPin Quad0 i2 } -attr @name {}
+attribute {hierPin Quad0 i3 } -attr @name {}
+attribute {hierPin Quad0 i4 } -attr @name {}
+load symbol GTP_X0Y7 syn HIERGEN port TX in port RX in
+load inst GT.0.3 GTP_X0Y7 syn -hier Quad0 -pg 1 -y 1 -x 2 -attr @name {} -attr @fillcolor #7a7a7a
+load inst pll.0.0 PLL0 syn -hier Quad0 -pg 1 -y 61 -x 1 -autohide -attr @name {} -attr @cell {} -attr @fillcolor #00868b
+attribute {pin pll.0.0 In} -attr @name {}
+attribute {pin pll.0.0 Out} -attr @name {}
+load symbol GTP_X0Y6 syn HIERGEN port TX in port RX in
+load inst GT.0.2 GTP_X0Y6 syn -hier Quad0 -pg 1 -y 2 -x 2 -attr @name {} -attr @fillcolor #7a7a7a
+load symbol GTP_X0Y5 syn HIERGEN port TX in port RX in
+load inst GT.0.1 GTP_X0Y5 syn -hier Quad0 -pg 1 -y 3 -x 2 -attr @name {} -attr @fillcolor #7a7a7a
+load inst pll.0.1 PLL1 syn -hier Quad0 -pg 1 -y 241 -x 1 -autohide -attr @name {} -attr @cell {} -attr @fillcolor #00868b
+attribute {pin pll.0.1 In} -attr @name {}
+attribute {pin pll.0.1 Out} -attr @name {}
+load symbol GTP_X0Y4 syn HIERGEN port TX in port RX in
+load inst GT.0.0 GTP_X0Y4 syn -hier Quad0 -pg 1 -y 4 -x 2 -attr @name {} -attr @fillcolor #7a7a7a
+load port GREFCLK in -pg 1 -y 261 -attr @fillcolor #ee9a00
+load net net.REFCLK1_Q0 -port REFCLK1_Q0 -pin Quad0 i1
+load net net.Quad0.pll0 -hierPin Quad0 i1 -pin pll.0.0 In
+load net net.pll0.0 -pin pll.0.0 Out -pin GT.0.0 TX
+attribute {inst pll.0.0} -attr @fillcolor #cccc00
+attribute {inst GT.0.0} -attr @fillcolor #cccc00
+load net net.REFCLK1_Q0 -port REFCLK1_Q0 -pin Quad0 i1
+load net net.Quad0.pll0 -hierPin Quad0 i1 -pin pll.0.0 In
+load net net.pll0.0 -pin pll.0.0 Out -pin GT.0.0 RX
+attribute {inst pll.0.0} -attr @fillcolor #cccc00
+attribute {inst GT.0.0} -attr @fillcolor #cccc00
+show
+# Starting Split Pages                                                   85.50
+# Split Pages 10 Comps, 3 Nets 0 NetBundles                              85.50
+# KwayPart started for 10 comps, 3 nets                                  85.50
+# Init done: 1 nodes (1 locked nodes), 0 edges                           85.50
+# Startpart done: 1 parts                                                85.50
+# KwayPart done                                                          85.50
+# End of Split Pages: 1 pages                                            85.50
+# End of Split Pages                                                     85.50
+# Generating Regions for Page 1:   10 Comps,    3 Nets                   85.50
+# Analyze                                                                85.50
+# Levelize                                                               85.50
+# End of LevelAssign mode=I, 3 Levels, 7 Comps, limit=30000              85.50
+# Nets                                                                   85.50
+# Place                                                                  85.50
+# PlaceNets                                                              85.50
+# SpaceY                                                                 85.50
+# Track                                                                  85.50
+# SpaceX                                                                 85.50
+# Wire                                                                   85.50
+# End of Wire: 2 nets, 2 ch, wire: 10-->10 (0 with wbits)                85.50
+# End of doGenerate                                                      85.50
+# Analyze                                                                85.50
+# Levelize                                                               85.50
+# End of LevelAssign mode=I, 2 Levels, 4 Comps, limit=30000              85.50
+# Nets                                                                   85.50
+# Place                                                                  85.50
+# PlaceNets                                                              85.50
+# SpaceY                                                                 85.50
+# Track                                                                  85.50
+# SpaceX                                                                 85.50
+# Wire                                                                   85.50
+# End of Wire: 1 nets, 1 ch, wire: 4-->4 (0 with wbits)                  85.50
+# End of doGenerate                                                      85.50
+# End of Generating Regions for Page 1                                   85.50
+scrollpos -83 90
+zoom -x 0 -y 0 0.68
+scrollpos -71 76
+#R0.68
+#CMD scrollpos -10 95
+scrollpos -10 95
+selection -itemized {inst GT.0.0}
+scrollpos -10 95
+scrollpos -10 91
+scrollpos -10 83
+scrollpos -10 73
+scrollpos -10 62
+scrollpos -10 48
+scrollpos -10 35
+scrollpos -10 24
+scrollpos -10 15
+scrollpos -10 9
+scrollpos -10 4
+scrollpos -10 2
+scrollpos -10 1
+scrollpos -10 0
+scrollpos -10 0
