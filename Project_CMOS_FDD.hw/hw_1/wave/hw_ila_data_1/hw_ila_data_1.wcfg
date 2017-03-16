@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wave_config>
+   <wave_state>
+   </wave_state>
+   <db_ref_list>
+      <db_ref path="D:/Suncai/Project_CMOS_FDD_NEW/Project_CMOS_FDD.hw/hw_1/wave/hw_ila_data_1/hw_ila_data_1.wdb" id="1">
+         <top_modules>
+         </top_modules>
+      </db_ref>
+   </db_ref_list>
+   <WVObjectSize size="7" />
+   <wave_markers>
+   </wave_markers>
+   <wvobject db_ref_id="1" fp_name="Ad80305_data_clk_p_IBUF" type="logic">
+      <obj_property name="ElementShortName">Ad80305_data_clk_p_IBUF</obj_property>
+      <obj_property name="ObjectShortName">Ad80305_data_clk_p_IBUF</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="Ad80305_p0_d_IBUF" type="array">
+      <obj_property name="ElementShortName">Ad80305_p0_d_IBUF[11:0]</obj_property>
+      <obj_property name="ObjectShortName">Ad80305_p0_d_IBUF[11:0]</obj_property>
+      <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+      <obj_property name="WaveformStyle">STYLE_ANALOG</obj_property>
+      <obj_property name="CellHeight">100</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="Ad80305_rx_frame_p_IBUF" type="logic">
+      <obj_property name="ElementShortName">Ad80305_rx_frame_p_IBUF</obj_property>
+      <obj_property name="ObjectShortName">Ad80305_rx_frame_p_IBUF</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="Clk_DDR_IN" type="logic">
+      <obj_property name="ElementShortName">Clk_DDR_IN</obj_property>
+      <obj_property name="ObjectShortName">Clk_DDR_IN</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="Data_DDR_IN" type="array">
+      <obj_property name="ElementShortName">Data_DDR_IN[25:0]</obj_property>
+      <obj_property name="ObjectShortName">Data_DDR_IN[25:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="Data_in_i_ad80305" type="array">
+      <obj_property name="ElementShortName">Data_in_i_ad80305[11:0]</obj_property>
+      <obj_property name="ObjectShortName">Data_in_i_ad80305[11:0]</obj_property>
+      <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+      <obj_property name="WaveformStyle">STYLE_ANALOG</obj_property>
+      <obj_property name="CellHeight">100</obj_property>
+      <obj_property name="AnalogYRangeType">ANALOG_YRANGETYPE_AUTO</obj_property>
+      <obj_property name="AnalogYRangeMin">0.000000</obj_property>
+      <obj_property name="AnalogYRRangeMax">0.000000</obj_property>
+      <obj_property name="AnalogInterpolation">ANALOG_INTERPOLATION_HOLD</obj_property>
+      <obj_property name="AnalogOffscale">ANALOG_OFFSCALE_HIDE</obj_property>
+      <obj_property name="AnalogHorizLine">0.000000</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="Data_in_q_ad80305" type="array">
+      <obj_property name="ElementShortName">Data_in_q_ad80305[11:0]</obj_property>
+      <obj_property name="ObjectShortName">Data_in_q_ad80305[11:0]</obj_property>
+      <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+      <obj_property name="WaveformStyle">STYLE_ANALOG</obj_property>
+      <obj_property name="CellHeight">100</obj_property>
+      <obj_property name="AnalogYRangeType">ANALOG_YRANGETYPE_AUTO</obj_property>
+      <obj_property name="AnalogYRangeMin">0.000000</obj_property>
+      <obj_property name="AnalogYRRangeMax">0.000000</obj_property>
+      <obj_property name="AnalogInterpolation">ANALOG_INTERPOLATION_HOLD</obj_property>
+      <obj_property name="AnalogOffscale">ANALOG_OFFSCALE_HIDE</obj_property>
+      <obj_property name="AnalogHorizLine">0.000000</obj_property>
+   </wvobject>
+</wave_config>

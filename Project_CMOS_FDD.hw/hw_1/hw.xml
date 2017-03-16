@@ -1,0 +1,227 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Product Version: Vivado v2015.2 (64-bit)                     -->
+<!--                                                              -->
+<!-- Copyright 1986-2015 Xilinx, Inc. All Rights Reserved.        -->
+
+<hwsession version="1" minor="1">
+  <device name="xc7a200t_0" gui_info="dashboard1=hw_ila_1[xc7a200t_0/hw_ila_1/Status=ILA_STATUS_1;xc7a200t_0/hw_ila_1/Waveform=ILA_WAVE_1;],dashboard2=dashboard_1[xc7a200t_0/hw_vio_1=VIO_PROBES_1;]"/>
+  <ObjectList object_type="hw_device" gui_info="">
+    <Object name="xc7a200t_0" gui_info="">
+      <Properties Property="PROBES.FILE" value="$_project_name_.runs/impl_1/debug_nets.ltx"/>
+      <Properties Property="PROGRAM.HW_BITSTREAM" value="$_project_name_.runs/impl_1/PICO_ICS_FDD.bit"/>
+    </Object>
+  </ObjectList>
+  <ObjectList object_type="hw_ila" gui_info="">
+    <Object name="U_ILA_RX_IQ" gui_info="">
+      <Properties Property="CONTROL.TRIGGER_CONDITION" value="AND"/>
+      <Properties Property="CORE_REFRESH_RATE_MS" value="500"/>
+    </Object>
+  </ObjectList>
+  <ObjectList object_type="hw_probe" gui_info="">
+    <Object name="Ad80305_data_clk_p_IBUF" gui_info="Trigger Setup=0"/>
+    <Object name="Ad80305_p0_d_IBUF[11:0]" gui_info="Trigger Setup=1"/>
+    <Object name="Ad80305_rx_frame_p_IBUF" gui_info="Trigger Setup=2"/>
+    <Object name="Clk_DDR_IN" gui_info="Trigger Setup=3"/>
+    <Object name="Data_DDR_IN[25:0]" gui_info="Trigger Setup=4"/>
+    <Object name="Data_in_i_ad80305[11:0]" gui_info="Trigger Setup=5"/>
+    <Object name="Data_in_q_ad80305[11:0]" gui_info="Trigger Setup=6"/>
+    <Object name="MODSET[2:0]" gui_info="dashboard_1/hw_vio_1=0"/>
+  </ObjectList>
+  <probeset name="hw project" active="false">
+    <probe type="ila" busType="net" source="netlist" spec="ILA_V2_RT">
+      <probeOptions Id="DebugProbeParams">
+        <Option Id="CAPTURE_COMPARE_VALUE" value="eq1&apos;bX"/>
+        <Option Id="COMPARE_VALUE.0" value="eq1&apos;bX"/>
+        <Option Id="DISPLAY_HINT" value=""/>
+        <Option Id="DISPLAY_VISIBILITY" value=""/>
+        <Option Id="HW_ILA" value="hw_ila_1"/>
+        <Option Id="NAME.CUSTOM" value=""/>
+        <Option Id="NAME.SELECT" value="Long"/>
+        <Option Id="TRIGGER_COMPARE_VALUE" value="eq1&apos;bX"/>
+      </probeOptions>
+      <nets>
+        <net name="Ad80305_data_clk_p_IBUF"/>
+      </nets>
+    </probe>
+    <probe type="ila" busType="bus" source="netlist" spec="ILA_V2_RT">
+      <probeOptions Id="DebugProbeParams">
+        <Option Id="CAPTURE_COMPARE_VALUE" value="eq12&apos;hXXX"/>
+        <Option Id="COMPARE_VALUE.0" value="eq12&apos;hXXX"/>
+        <Option Id="DISPLAY_HINT" value=""/>
+        <Option Id="DISPLAY_VISIBILITY" value=""/>
+        <Option Id="HW_ILA" value="hw_ila_1"/>
+        <Option Id="NAME.CUSTOM" value=""/>
+        <Option Id="NAME.SELECT" value="Long"/>
+        <Option Id="TRIGGER_COMPARE_VALUE" value="eq12&apos;hXXX"/>
+      </probeOptions>
+      <nets>
+        <net name="Ad80305_p0_d_IBUF[11]"/>
+        <net name="Ad80305_p0_d_IBUF[10]"/>
+        <net name="Ad80305_p0_d_IBUF[9]"/>
+        <net name="Ad80305_p0_d_IBUF[8]"/>
+        <net name="Ad80305_p0_d_IBUF[7]"/>
+        <net name="Ad80305_p0_d_IBUF[6]"/>
+        <net name="Ad80305_p0_d_IBUF[5]"/>
+        <net name="Ad80305_p0_d_IBUF[4]"/>
+        <net name="Ad80305_p0_d_IBUF[3]"/>
+        <net name="Ad80305_p0_d_IBUF[2]"/>
+        <net name="Ad80305_p0_d_IBUF[1]"/>
+        <net name="Ad80305_p0_d_IBUF[0]"/>
+      </nets>
+    </probe>
+    <probe type="ila" busType="net" source="netlist" spec="ILA_V2_RT">
+      <probeOptions Id="DebugProbeParams">
+        <Option Id="CAPTURE_COMPARE_VALUE" value="eq1&apos;bX"/>
+        <Option Id="COMPARE_VALUE.0" value="eq1&apos;bX"/>
+        <Option Id="DISPLAY_HINT" value=""/>
+        <Option Id="DISPLAY_VISIBILITY" value=""/>
+        <Option Id="HW_ILA" value="hw_ila_1"/>
+        <Option Id="NAME.CUSTOM" value=""/>
+        <Option Id="NAME.SELECT" value="Long"/>
+        <Option Id="TRIGGER_COMPARE_VALUE" value="eq1&apos;bX"/>
+      </probeOptions>
+      <nets>
+        <net name="Ad80305_rx_frame_p_IBUF"/>
+      </nets>
+    </probe>
+    <probe type="ila" busType="net" source="netlist" spec="ILA_V2_RT">
+      <probeOptions Id="DebugProbeParams">
+        <Option Id="CAPTURE_COMPARE_VALUE" value="eq1&apos;bX"/>
+        <Option Id="COMPARE_VALUE.0" value="eq1&apos;bX"/>
+        <Option Id="DISPLAY_HINT" value=""/>
+        <Option Id="DISPLAY_VISIBILITY" value=""/>
+        <Option Id="HW_ILA" value="hw_ila_1"/>
+        <Option Id="NAME.CUSTOM" value=""/>
+        <Option Id="NAME.SELECT" value="Long"/>
+        <Option Id="TRIGGER_COMPARE_VALUE" value="eq1&apos;bX"/>
+      </probeOptions>
+      <nets>
+        <net name="Clk_DDR_IN"/>
+      </nets>
+    </probe>
+    <probe type="ila" busType="bus" source="netlist" spec="ILA_V2_RT">
+      <probeOptions Id="DebugProbeParams">
+        <Option Id="CAPTURE_COMPARE_VALUE" value="eq26&apos;hXXX_XXXX"/>
+        <Option Id="COMPARE_VALUE.0" value="eq26&apos;hXXX_XXXX"/>
+        <Option Id="DISPLAY_HINT" value=""/>
+        <Option Id="DISPLAY_VISIBILITY" value=""/>
+        <Option Id="HW_ILA" value="hw_ila_1"/>
+        <Option Id="NAME.CUSTOM" value=""/>
+        <Option Id="NAME.SELECT" value="Long"/>
+        <Option Id="TRIGGER_COMPARE_VALUE" value="eq26&apos;hXXX_XXXX"/>
+      </probeOptions>
+      <nets>
+        <net name="Data_DDR_IN[25]"/>
+        <net name="Data_DDR_IN[24]"/>
+        <net name="Data_DDR_IN[23]"/>
+        <net name="Data_DDR_IN[22]"/>
+        <net name="Data_DDR_IN[21]"/>
+        <net name="Data_DDR_IN[20]"/>
+        <net name="Data_DDR_IN[19]"/>
+        <net name="Data_DDR_IN[18]"/>
+        <net name="Data_DDR_IN[17]"/>
+        <net name="Data_DDR_IN[16]"/>
+        <net name="Data_DDR_IN[15]"/>
+        <net name="Data_DDR_IN[14]"/>
+        <net name="Data_DDR_IN[13]"/>
+        <net name="Data_DDR_IN[12]"/>
+        <net name="Data_DDR_IN[11]"/>
+        <net name="Data_DDR_IN[10]"/>
+        <net name="Data_DDR_IN[9]"/>
+        <net name="Data_DDR_IN[8]"/>
+        <net name="Data_DDR_IN[7]"/>
+        <net name="Data_DDR_IN[6]"/>
+        <net name="Data_DDR_IN[5]"/>
+        <net name="Data_DDR_IN[4]"/>
+        <net name="Data_DDR_IN[3]"/>
+        <net name="Data_DDR_IN[2]"/>
+        <net name="Data_DDR_IN[1]"/>
+        <net name="Data_DDR_IN[0]"/>
+      </nets>
+    </probe>
+    <probe type="ila" busType="bus" source="netlist" spec="ILA_V2_RT">
+      <probeOptions Id="DebugProbeParams">
+        <Option Id="CAPTURE_COMPARE_VALUE" value="eq12&apos;hXXX"/>
+        <Option Id="COMPARE_VALUE.0" value="eq12&apos;hXXX"/>
+        <Option Id="DISPLAY_HINT" value=""/>
+        <Option Id="DISPLAY_VISIBILITY" value=""/>
+        <Option Id="HW_ILA" value="hw_ila_1"/>
+        <Option Id="NAME.CUSTOM" value=""/>
+        <Option Id="NAME.SELECT" value="Long"/>
+        <Option Id="TRIGGER_COMPARE_VALUE" value="eq12&apos;hXXX"/>
+      </probeOptions>
+      <nets>
+        <net name="Data_in_i_ad80305[11]"/>
+        <net name="Data_in_i_ad80305[10]"/>
+        <net name="Data_in_i_ad80305[9]"/>
+        <net name="Data_in_i_ad80305[8]"/>
+        <net name="Data_in_i_ad80305[7]"/>
+        <net name="Data_in_i_ad80305[6]"/>
+        <net name="Data_in_i_ad80305[5]"/>
+        <net name="Data_in_i_ad80305[4]"/>
+        <net name="Data_in_i_ad80305[3]"/>
+        <net name="Data_in_i_ad80305[2]"/>
+        <net name="Data_in_i_ad80305[1]"/>
+        <net name="Data_in_i_ad80305[0]"/>
+      </nets>
+    </probe>
+    <probe type="ila" busType="bus" source="netlist" spec="ILA_V2_RT">
+      <probeOptions Id="DebugProbeParams">
+        <Option Id="CAPTURE_COMPARE_VALUE" value="eq12&apos;hXXX"/>
+        <Option Id="COMPARE_VALUE.0" value="eq12&apos;hXXX"/>
+        <Option Id="DISPLAY_HINT" value=""/>
+        <Option Id="DISPLAY_VISIBILITY" value=""/>
+        <Option Id="HW_ILA" value="hw_ila_1"/>
+        <Option Id="NAME.CUSTOM" value=""/>
+        <Option Id="NAME.SELECT" value="Long"/>
+        <Option Id="TRIGGER_COMPARE_VALUE" value="eq12&apos;hXXX"/>
+      </probeOptions>
+      <nets>
+        <net name="Data_in_q_ad80305[11]"/>
+        <net name="Data_in_q_ad80305[10]"/>
+        <net name="Data_in_q_ad80305[9]"/>
+        <net name="Data_in_q_ad80305[8]"/>
+        <net name="Data_in_q_ad80305[7]"/>
+        <net name="Data_in_q_ad80305[6]"/>
+        <net name="Data_in_q_ad80305[5]"/>
+        <net name="Data_in_q_ad80305[4]"/>
+        <net name="Data_in_q_ad80305[3]"/>
+        <net name="Data_in_q_ad80305[2]"/>
+        <net name="Data_in_q_ad80305[1]"/>
+        <net name="Data_in_q_ad80305[0]"/>
+      </nets>
+    </probe>
+    <probe type="vio_input" busType="bus" source="netlist" spec="VIO_INPUT_V2_RT">
+      <probeOptions Id="DebugProbeParams">
+        <Option Id="ACTIVITY_PERSISTENCE" value="SHORT"/>
+        <Option Id="DISPLAY_HINT" value=""/>
+        <Option Id="DISPLAY_VISIBILITY" value=""/>
+        <Option Id="HW_VIO" value="hw_vio_1"/>
+        <Option Id="INPUT_VALUE_RADIX" value="HEX"/>
+        <Option Id="NAME.CUSTOM" value=""/>
+        <Option Id="NAME.SELECT" value="Long"/>
+      </probeOptions>
+      <nets>
+        <net name="Cnt_40m_reg_n_0_[2]"/>
+        <net name="Cnt_40m_reg_n_0_[1]"/>
+        <net name="Cnt_40m_reg_n_0_[0]"/>
+      </nets>
+    </probe>
+    <probe type="vio_output" busType="bus" source="netlist" spec="VIO_OUTPUT_V2_RT">
+      <probeOptions Id="DebugProbeParams">
+        <Option Id="DISPLAY_HINT" value=""/>
+        <Option Id="DISPLAY_VISIBILITY" value=""/>
+        <Option Id="HW_VIO" value="hw_vio_1"/>
+        <Option Id="NAME.CUSTOM" value=""/>
+        <Option Id="NAME.SELECT" value="Long"/>
+        <Option Id="OUTPUT_VALUE" value="2"/>
+        <Option Id="OUTPUT_VALUE_RADIX" value="HEX"/>
+      </probeOptions>
+      <nets>
+        <net name="MODSET[2]"/>
+        <net name="MODSET[1]"/>
+        <net name="MODSET[0]"/>
+      </nets>
+    </probe>
+  </probeset>
+</hwsession>
